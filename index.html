@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Magic Dream Costumes & Party Rentals | Los Angeles, CA</title>
+<meta name="description" content="Handmade costumes, bounce houses, tables, chairs, tents, and concession equipment. Serving East LA, Montebello, and South Gate since 1998. Se Habla Espanol.">
+<meta property="og:title" content="Magic Dream Costumes & Party Rentals | Los Angeles">
+<meta property="og:description" content="Over 100 handmade character costumes and full party rental equipment. 3 locations in LA. Family-owned since 1998.">
+<link rel="canonical" href="https://kalnyesgrowth.github.io/magic-dream-demo/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:hidden;scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,sans-serif;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased}
+:root{
+  --primary:#0E3164;
+  --primary-light:#1a4a8a;
+  --accent:#469ADA;
+  --accent-light:#6bb3e8;
+  --highlight:#CFE67A;
+  --dark:#0a1628;
+  --surface:#f0f4f8;
+  --text:#1a1a2e;
+  --text-secondary:#6b7280;
+  --success:#16a34a;
+  --radius:14px;
+  --container:1200px;
+  --nav-h:72px;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:inherit}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:transparent;transition:background .3s,box-shadow .3s;height:var(--nav-h);display:flex;align-items:center}
+nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--container);margin:0 auto;padding:0 20px}
+.nav-logo img{height:44px;width:auto}
+.nav-logo span{color:#fff;font-size:1.2rem;font-weight:800;letter-spacing:-.02em}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-phone{color:#fff;font-weight:700;font-size:.88rem;display:flex;align-items:center;gap:6px;opacity:.9;transition:opacity .2s}
+.nav-phone:hover{opacity:1}
+.nav-cta{background:transparent;border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:10px 22px;border-radius:100px;font-weight:700;font-size:.88rem;transition:all .2s}
+.nav-cta:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.lang-toggle{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;padding:6px 12px;border-radius:100px;font-size:.78rem;font-weight:700;transition:all .2s}
+.lang-toggle:hover{background:rgba(255,255,255,.2)}
+.nav-hamburger{display:none;background:none;border:none;color:#fff;padding:8px}
+@media(max-width:768px){
+  .nav-phone,.nav-cta{display:none}
+  .nav-hamburger{display:flex}
+}
+
+/* ===== MOBILE NAV ===== */
+.mobile-nav{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(10,22,40,.98);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mobile-nav.open{opacity:1;pointer-events:auto}
+.mobile-nav a,.mobile-nav button{color:#fff;font-size:1.3rem;font-weight:700;background:none;border:none;padding:12px 24px}
+.mobile-nav-close{position:absolute;top:20px;right:20px;background:none;border:none;color:#fff;padding:8px}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0a1628}
+.hero-video-wrap{position:absolute;inset:0;z-index:0}
+.hero-video-wrap canvas{width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,22,40,.65) 0%,rgba(10,22,40,.8) 100%);z-index:1}
+.hero-content{position:relative;z-index:2;text-align:center;color:#fff;padding:20px;max-width:800px}
+.hero-logo{height:80px;width:auto;margin:0 auto 20px;filter:brightness(1.1)}
+.hero-badge{display:inline-block;background:rgba(207,230,122,.15);color:var(--highlight);padding:6px 18px;border-radius:100px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;line-height:1.15;margin-bottom:16px;letter-spacing:-.02em}
+.hero-sub{font-size:clamp(.92rem,2vw,1.1rem);color:rgba(255,255,255,.85);max-width:600px;margin:0 auto 28px;line-height:1.6}
+.hero-cta{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:14px 32px;border-radius:100px;font-weight:700;font-size:1rem;transition:all .2s}
+.hero-cta:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.hero-trust{display:flex;justify-content:center;gap:24px;margin-top:32px;flex-wrap:wrap}
+.hero-trust-item{display:flex;align-items:center;gap:6px;font-size:.82rem;color:rgba(255,255,255,.7)}
+.hero-trust-item svg{opacity:.6}
+
+/* ===== SECTION ===== */
+.section{padding:80px 0}
+.section-header{text-align:center;margin-bottom:48px}
+.section-label{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.section-title{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;color:var(--text);letter-spacing:-.02em}
+.section-desc{color:var(--text-secondary);margin-top:8px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.6}
+
+/* ===== CATEGORIES GRID ===== */
+.categories-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat-card{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1;cursor:pointer;transition:transform .2s}
+.cat-card:hover{transform:translateY(-4px)}
+.cat-card img{width:100%;height:100%;object-fit:cover}
+.cat-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,22,40,.85) 0%,rgba(10,22,40,.2) 60%)}
+.cat-card-text{position:absolute;bottom:16px;left:16px;right:16px;color:#fff}
+.cat-card-text h3{font-size:1.05rem;font-weight:800;margin-bottom:2px}
+.cat-card-text span{font-size:.78rem;color:rgba(255,255,255,.7)}
+@media(max-width:768px){.categories-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== PRODUCTS GRID ===== */
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.product-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid #e5e9f0;transition:transform .2s,box-shadow .2s;cursor:pointer}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.1)}
+.product-card-img{aspect-ratio:1;overflow:hidden;background:var(--surface)}
+.product-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.product-card:hover .product-card-img img{transform:scale(1.05)}
+.product-card-info{padding:14px}
+.product-card-info h4{font-size:.92rem;font-weight:700;margin-bottom:4px;line-height:1.3}
+.product-card-price{font-size:1.05rem;font-weight:800;color:var(--primary)}
+.product-card-price small{font-size:.78rem;font-weight:500;color:var(--text-secondary)}
+.product-card-badge{position:absolute;top:10px;left:10px;background:var(--accent);color:#fff;font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:100px;z-index:2}
+@media(max-width:900px){.products-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.products-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+
+/* ===== COSTUME SPOTLIGHT ===== */
+.spotlight{position:relative;background:var(--dark);color:#fff;padding:80px 0;overflow:hidden}
+.spotlight-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0E3164 0%,#1a4a8a 50%,#0a1628 100%);opacity:.95}
+.spotlight .container{position:relative;z-index:2}
+.spotlight-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.spotlight-text .section-label{color:var(--highlight)}
+.spotlight-text h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:16px;line-height:1.15}
+.spotlight-text p{color:rgba(255,255,255,.8);line-height:1.7;margin-bottom:24px}
+.spotlight-features{display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
+.spotlight-feature{display:flex;align-items:center;gap:10px;font-size:.92rem;color:rgba(255,255,255,.85)}
+.spotlight-feature svg{color:var(--highlight);flex-shrink:0}
+.spotlight-cta{display:inline-flex;align-items:center;gap:8px;background:var(--highlight);color:var(--dark);padding:14px 28px;border-radius:100px;font-weight:700;font-size:.95rem;border:none;transition:all .2s}
+.spotlight-cta:hover{background:#d8ef8a;transform:translateY(-2px)}
+.spotlight-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.spotlight-img img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+@media(max-width:768px){.spotlight-grid{grid-template-columns:1fr;text-align:center}.spotlight-features{align-items:center}}
+
+/* ===== WHY CHOOSE ===== */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why-card{background:#fff;border-radius:var(--radius);padding:28px 24px;text-align:center;border:1px solid #e5e9f0;transition:transform .2s,box-shadow .2s}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08)}
+.why-icon{width:56px;height:56px;border-radius:50%;background:rgba(70,154,218,.1);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--accent)}
+.why-card h4{font-size:1rem;font-weight:700;margin-bottom:8px}
+.why-card p{font-size:.85rem;color:var(--text-secondary);line-height:1.6}
+@media(max-width:768px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.why-grid{grid-template-columns:1fr}}
+
+/* ===== TIMELINE ===== */
+.timeline-wrap{position:relative;max-width:600px;margin:0 auto;padding-left:40px}
+.timeline-line{position:absolute;left:15px;top:0;bottom:0;width:3px;background:#e5e9f0;border-radius:2px}
+.timeline-progress{position:absolute;left:15px;top:0;width:3px;background:var(--accent);border-radius:2px;height:0;transition:height .1s}
+.timeline-step{position:relative;padding:0 0 40px 24px;opacity:.4;transform:translateY(20px);transition:all .5s}
+.timeline-step.visible{opacity:1;transform:translateY(0)}
+.timeline-step:last-child{padding-bottom:0}
+.timeline-dot{position:absolute;left:-32px;top:4px;width:28px;height:28px;border-radius:50%;background:var(--surface);border:3px solid #e5e9f0;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;color:var(--text-secondary);transition:all .3s;z-index:2}
+.timeline-step.visible .timeline-dot{background:var(--accent);border-color:var(--accent);color:#fff}
+.timeline-step h4{font-size:1.05rem;font-weight:700;margin-bottom:4px}
+.timeline-step p{font-size:.88rem;color:var(--text-secondary);line-height:1.5}
+
+/* ===== REVIEWS ===== */
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.review-card{background:#fff;border-radius:var(--radius);padding:24px;border:1px solid #e5e9f0}
+.review-stars{color:#f59e0b;font-size:.9rem;margin-bottom:10px;letter-spacing:2px}
+.review-text{font-size:.9rem;color:var(--text);line-height:1.6;margin-bottom:14px;font-style:italic}
+.review-author{font-size:.82rem;font-weight:700;color:var(--text-secondary)}
+.review-source{font-size:.72rem;color:var(--text-secondary);margin-top:2px}
+@media(max-width:768px){.reviews-grid{grid-template-columns:1fr}}
+
+/* ===== LOCATIONS ===== */
+.locations-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.location-card{background:#fff;border-radius:var(--radius);padding:24px;border:1px solid #e5e9f0;text-align:center}
+.location-card h4{font-size:1.05rem;font-weight:700;margin-bottom:8px;color:var(--primary)}
+.location-card p{font-size:.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:4px}
+.location-card a{color:var(--accent);font-weight:700}
+.location-badge{display:inline-block;background:var(--accent);color:#fff;font-size:.7rem;font-weight:700;padding:3px 10px;border-radius:100px;margin-bottom:12px}
+@media(max-width:768px){.locations-grid{grid-template-columns:1fr}}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,#0E3164 0%,#1a4a8a 100%);padding:64px 0;text-align:center;color:#fff}
+.cta-banner h2{font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;margin-bottom:12px}
+.cta-banner p{color:rgba(255,255,255,.8);margin-bottom:24px;font-size:1rem}
+
+/* ===== CATALOG PAGE ===== */
+.page{display:none}
+.page.active{display:block}
+.catalog-header{background:var(--dark);padding:calc(var(--nav-h) + 32px) 0 32px;color:#fff}
+.catalog-header h1{font-size:1.8rem;font-weight:800}
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px;padding:16px 0}
+.filter-btn{background:var(--surface);border:1px solid #e5e9f0;color:var(--text);padding:8px 18px;border-radius:100px;font-size:.82rem;font-weight:600;transition:all .2s;white-space:nowrap}
+.filter-btn.active,.filter-btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+/* ===== MODAL ===== */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:300;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:20px}
+.modal-overlay.open{opacity:1;pointer-events:auto}
+.modal{background:#fff;border-radius:var(--radius);max-width:800px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.modal-body{display:grid;grid-template-columns:1fr 1fr}
+.modal-img{aspect-ratio:1;overflow:hidden;background:var(--surface)}
+.modal-img img{width:100%;height:100%;object-fit:cover}
+.modal-info{padding:28px;position:relative}
+.modal-close{position:absolute;top:12px;right:12px;background:var(--surface);border:none;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.modal-close:hover{background:#e5e9f0}
+.modal-info h2{font-size:1.3rem;font-weight:800;margin-bottom:8px;padding-right:40px}
+.modal-price{font-size:1.2rem;font-weight:800;color:var(--primary);margin-bottom:12px}
+.modal-desc{font-size:.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:16px}
+.modal-add-btn{width:100%;background:var(--primary);color:#fff;border:none;padding:14px;border-radius:var(--radius);font-size:.95rem;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;transition:background .2s}
+.modal-add-btn:hover{background:var(--primary-light)}
+@media(max-width:600px){.modal-body{grid-template-columns:1fr}.modal-img{aspect-ratio:16/9}}
+
+/* ===== CART DRAWER ===== */
+.cart-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:400;opacity:0;pointer-events:none;transition:opacity .3s}
+.cart-backdrop.open{opacity:1;pointer-events:auto}
+.cart-drawer{position:fixed;top:0;right:-420px;bottom:0;width:400px;max-width:100vw;background:#fff;z-index:401;transition:right .35s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column;box-shadow:-8px 0 32px rgba(0,0,0,.15)}
+.cart-drawer.open{right:0}
+.cart-drawer-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid #e5e9f0;flex-shrink:0}
+.cart-drawer-header h3{font-size:1.1rem;font-weight:800}
+.cart-drawer-header button{background:none;border:none;color:var(--text-secondary);padding:4px}
+.cart-drawer-body{flex:1;overflow-y:auto;padding:16px 20px}
+.cart-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #f0f2f8}
+.cart-item-img{width:60px;height:60px;border-radius:8px;overflow:hidden;flex-shrink:0;background:var(--surface)}
+.cart-item-img img{width:100%;height:100%;object-fit:cover}
+.cart-item-info{flex:1}
+.cart-item-info h5{font-size:.88rem;font-weight:700;margin-bottom:2px}
+.cart-item-info span{font-size:.82rem;color:var(--text-secondary)}
+.cart-item-remove{background:none;border:none;color:var(--text-secondary);font-size:.78rem;padding:4px;transition:color .2s}
+.cart-item-remove:hover{color:#ef4444}
+.cart-empty{text-align:center;padding:48px 20px;color:var(--text-secondary)}
+.cart-empty svg{margin:0 auto 12px;opacity:.3}
+.cart-drawer-footer{border-top:1px solid #e5e9f0;padding:16px 20px;flex-shrink:0}
+.cart-totals{display:flex;justify-content:space-between;font-size:1.05rem;font-weight:800;margin-bottom:12px}
+.cart-note{font-size:.72rem;color:var(--text-secondary);margin-bottom:12px;line-height:1.4}
+.btn-checkout{width:100%;background:var(--primary);color:#fff;border:none;padding:14px;border-radius:var(--radius);font-size:.95rem;font-weight:700;transition:background .2s;margin-bottom:8px}
+.btn-checkout:hover{background:var(--primary-light)}
+.btn-continue{width:100%;background:transparent;color:var(--text-secondary);border:1px solid #e5e9f0;padding:10px;border-radius:var(--radius);font-size:.85rem;font-weight:600;transition:all .2s}
+.btn-continue:hover{border-color:var(--primary);color:var(--primary)}
+
+/* ===== CHECKOUT VIEW ===== */
+.cart-checkout{display:none;flex-direction:column;height:100%}
+.cart-checkout.active{display:flex}
+.cart-view.hidden{display:none}
+.checkout-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid #e5e9f0;flex-shrink:0}
+.checkout-back{display:flex;align-items:center;gap:4px;background:none;border:none;color:var(--text-secondary);font-size:.88rem;font-weight:600}
+.checkout-body{flex:1;overflow-y:auto;padding:20px}
+.checkout-summary{background:var(--surface);border-radius:var(--radius);padding:14px;margin-bottom:20px}
+.checkout-summary h5{font-size:.82rem;font-weight:700;color:var(--text-secondary);margin-bottom:8px}
+.checkout-summary-item{display:flex;justify-content:space-between;font-size:.85rem;padding:4px 0}
+.checkout-summary-total{display:flex;justify-content:space-between;font-size:1rem;font-weight:800;padding-top:8px;margin-top:8px;border-top:1px solid #e5e9f0}
+.checkout-field{margin-bottom:14px}
+.checkout-field label{display:block;font-size:.82rem;font-weight:700;margin-bottom:4px;color:var(--text)}
+.checkout-field .req{color:#ef4444}
+.checkout-field input,.checkout-field select,.checkout-field textarea{width:100%;padding:10px 14px;border:1.5px solid #e5e9f0;border-radius:10px;font-size:.9rem;font-family:inherit;transition:border-color .2s;background:#fff}
+.checkout-field input:focus,.checkout-field select:focus,.checkout-field textarea:focus{outline:none;border-color:var(--accent)}
+.checkout-field textarea{resize:vertical;min-height:60px}
+.btn-complete{width:100%;background:var(--success);color:#fff;border:none;padding:14px;border-radius:var(--radius);font-size:.95rem;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;transition:background .2s;margin-top:8px}
+.btn-complete:hover{background:#15803d}
+.checkout-secure{display:flex;align-items:center;justify-content:center;gap:6px;font-size:.78rem;color:var(--text-secondary);margin-top:12px}
+
+/* ===== TOAST ===== */
+.toast{position:fixed;top:20px;right:20px;background:var(--success);color:#fff;padding:12px 20px;border-radius:var(--radius);display:flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;z-index:500;transform:translateX(120%);transition:transform .3s cubic-bezier(.16,1,.3,1);box-shadow:0 8px 24px rgba(0,0,0,.15)}
+.toast.show{transform:translateX(0)}
+
+/* ===== FOOTER ===== */
+.footer{background:var(--dark);color:#fff;padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.footer-brand p{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.6}
+.footer-brand a{color:var(--accent-light)}
+.footer h4{font-size:.88rem;font-weight:700;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.footer ul{list-style:none}
+.footer li{margin-bottom:8px}
+.footer li a,.footer li{font-size:.88rem;color:rgba(255,255,255,.7);transition:color .2s}
+.footer li a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;margin-top:48px;font-size:.78rem;color:rgba(255,255,255,.4);text-align:center}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr;gap:24px}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
+
+/* ===== MOBILE STICKY BAR ===== */
+.mobile-sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:99;background:var(--primary);padding:12px 16px;gap:8px}
+.mobile-sticky a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;color:#fff;font-weight:700;font-size:.88rem;padding:10px;border-radius:var(--radius);background:rgba(255,255,255,.1);transition:background .2s}
+.mobile-sticky a:hover{background:rgba(255,255,255,.2)}
+@media(max-width:768px){.mobile-sticky{display:flex}body{padding-bottom:72px}}
+
+/* ===== POPUPS ===== */
+.popup-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:350;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;padding:20px}
+.popup-overlay.open{opacity:1;pointer-events:auto}
+.popup{background:#fff;border-radius:var(--radius);max-width:420px;width:100%;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.3);animation:popIn .3s cubic-bezier(.16,1,.3,1)}
+@keyframes popIn{from{transform:scale(.9) translateY(16px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+.popup-close{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.1);border:none;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2;transition:background .2s}
+.popup-close:hover{background:rgba(0,0,0,.2)}
+.popup-header{position:relative;padding:28px 24px 20px;text-align:center;background:linear-gradient(135deg,rgba(70,154,218,.1),rgba(207,230,122,.1))}
+.popup-header h3{font-size:1.15rem;font-weight:800;margin-bottom:8px}
+.popup-header p{font-size:.88rem;color:var(--text-secondary);line-height:1.5}
+.popup-body{padding:20px 24px 24px}
+.popup-cta{width:100%;background:var(--primary);color:#fff;border:none;padding:12px;border-radius:var(--radius);font-size:.92rem;font-weight:700;transition:background .2s}
+.popup-cta:hover{background:var(--primary-light)}
+.popup-dismiss{width:100%;background:none;border:none;color:var(--text-secondary);font-size:.82rem;padding:10px;margin-top:4px}
+
+/* ===== FAQ ===== */
+.faq-list{max-width:700px;margin:0 auto}
+.faq-item{border-bottom:1px solid #e5e9f0}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:18px 0;font-size:1rem;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--text)}
+.faq-q svg{flex-shrink:0;transition:transform .3s}
+.faq-item.open .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s}
+.faq-a p{padding:0 0 18px;font-size:.9rem;color:var(--text-secondary);line-height:1.6}
+
+/* ===== CART COUNT ===== */
+.cart-count{position:relative}
+.cart-count-badge{position:absolute;top:-6px;right:-8px;background:var(--accent);color:#fff;font-size:.65rem;font-weight:800;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid var(--dark)}
+.cart-count-badge:empty{display:none}
+.cart-count-badge.pulse{animation:pulse .4s cubic-bezier(.175,.885,.32,1.4)}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.3)}100%{transform:scale(1)}}
+
+/* ===== DEMO NOTICE ===== */
+.demo-bar{background:var(--highlight);color:var(--dark);text-align:center;padding:8px 16px;font-size:.78rem;font-weight:700;position:relative;z-index:101}
+</style>
+</head>
+<body>
+
+<!-- DEMO NOTICE -->
+<div class="demo-bar" data-en="This is a demo website built by KalnyesGrowth. All content is real. Pricing shown for demonstration." data-es="Este es un sitio demo creado por KalnyesGrowth. Todo el contenido es real. Precios mostrados como demostracion.">This is a demo website built by KalnyesGrowth. All content is real. Pricing shown for demonstration.</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showPage('home');event.preventDefault()">
+      <img src="assets/logo.png" alt="Magic Dream Party Rentals">
+    </a>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+13232638850">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (323) 263-8850
+      </a>
+      <a class="nav-cta" href="#" onclick="showPage('catalog');event.preventDefault()" data-en="Browse Rentals" data-es="Ver Alquileres">Browse Rentals</a>
+      <button class="lang-toggle" onclick="toggleLang()" id="langBtn">ES</button>
+      <button class="cart-count" onclick="openCart()" aria-label="Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count-badge" id="cartBadge"></span>
+      </button>
+      <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="toggleMobileNav()">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="#" onclick="showPage('home');toggleMobileNav()" data-en="Home" data-es="Inicio">Home</a>
+  <a href="#" onclick="showPage('catalog');toggleMobileNav()" data-en="All Rentals" data-es="Todos los Alquileres">All Rentals</a>
+  <a href="tel:+13232638850" data-en="Call (323) 263-8850" data-es="Llamar (323) 263-8850">Call (323) 263-8850</a>
+  <a href="https://maps.google.com/?q=4685+E+Olympic+Blvd+Los+Angeles+CA+90022" target="_blank" data-en="Get Directions" data-es="Como Llegar">Get Directions</a>
+  <button class="lang-toggle" onclick="toggleLang();toggleMobileNav()" style="font-size:1rem;padding:10px 24px">EN / ES</button>
+</div>
+
+<!-- ========== HOME PAGE ========== -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-video-wrap" id="heroWrap">
+      <canvas id="heroCanvas"></canvas>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img class="hero-logo" src="assets/logo.png" alt="Magic Dream" id="heroLogo">
+      <div class="hero-badge" data-en="FAMILY-OWNED SINCE 1998" data-es="NEGOCIO FAMILIAR DESDE 1998">FAMILY-OWNED SINCE 1998</div>
+      <h1 data-en="Costumes, Rentals & Everything for Your Dream Party" data-es="Disfraces, Alquileres y Todo Para Tu Fiesta Sonada">Costumes, Rentals & Everything for Your Dream Party</h1>
+      <p class="hero-sub" data-en="Over 100 handmade character costumes, bounce houses, tables, chairs, tents, and concession equipment. 3 locations serving East LA, Montebello, and South Gate." data-es="Mas de 100 disfraces de personajes hechos a mano, casas de brinco, mesas, sillas, carpas y equipo de concesion. 3 ubicaciones sirviendo East LA, Montebello y South Gate.">Over 100 handmade character costumes, bounce houses, tables, chairs, tents, and concession equipment. 3 locations serving East LA, Montebello, and South Gate.</p>
+      <a class="hero-cta" href="#" onclick="showPage('catalog');event.preventDefault()">
+        <span data-en="Browse All Rentals" data-es="Ver Todos los Alquileres">Browse All Rentals</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span data-en="4.3 Stars on Yelp" data-es="4.3 Estrellas en Yelp">4.3 Stars on Yelp</span>
+        </div>
+        <div class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span data-en="Since 1998" data-es="Desde 1998">Since 1998</span>
+        </div>
+        <div class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-en="3 Locations" data-es="3 Ubicaciones">3 Locations</span>
+        </div>
+        <div class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>Se Habla Espanol</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" style="background:var(--surface)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-en="BROWSE BY CATEGORY" data-es="BUSCAR POR CATEGORIA">BROWSE BY CATEGORY</div>
+        <h2 class="section-title" data-en="Everything Under One Roof" data-es="Todo Bajo Un Solo Techo">Everything Under One Roof</h2>
+      </div>
+      <div class="categories-grid" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- POPULAR ITEMS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-en="POPULAR RENTALS" data-es="ALQUILERES POPULARES">POPULAR RENTALS</div>
+        <h2 class="section-title" data-en="Customer Favorites" data-es="Favoritos de Nuestros Clientes">Customer Favorites</h2>
+        <p class="section-desc" data-en="Our most-requested party rentals and costume selections." data-es="Nuestros alquileres y disfraces mas solicitados.">Our most-requested party rentals and costume selections.</p>
+      </div>
+      <div class="products-grid" id="featuredGrid"></div>
+      <div style="text-align:center;margin-top:32px">
+        <a class="hero-cta" href="#" onclick="showPage('catalog');event.preventDefault()" style="border-color:var(--primary);color:var(--primary)">
+          <span data-en="View All Products" data-es="Ver Todos los Productos">View All Products</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COSTUME SPOTLIGHT -->
+  <section class="spotlight">
+    <div class="spotlight-bg"></div>
+    <div class="container">
+      <div class="spotlight-grid">
+        <div class="spotlight-text">
+          <div class="section-label" style="color:var(--highlight)" data-en="OUR SPECIALTY" data-es="NUESTRA ESPECIALIDAD">OUR SPECIALTY</div>
+          <h2 data-en="Handmade Character Costumes" data-es="Disfraces de Personajes Hechos a Mano">Handmade Character Costumes</h2>
+          <p data-en="Every costume is handcrafted right here in Los Angeles. Over 100 unique character costumes available for rent or purchase, from Buzz Lightyear to Darth Vader. Kids to adults, small to plus size." data-es="Cada disfraz es hecho a mano aqui mismo en Los Angeles. Mas de 100 disfraces unicos de personajes disponibles para alquiler o compra, desde Buzz Lightyear hasta Darth Vader. Ninos a adultos, talla chica a talla grande.">Every costume is handcrafted right here in Los Angeles. Over 100 unique character costumes available for rent or purchase, from Buzz Lightyear to Darth Vader. Kids to adults, small to plus size.</p>
+          <div class="spotlight-features">
+            <div class="spotlight-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-en="100+ Unique Characters" data-es="100+ Personajes Unicos">100+ Unique Characters</span>
+            </div>
+            <div class="spotlight-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-en="Handmade in Los Angeles" data-es="Hechos a Mano en Los Angeles">Handmade in Los Angeles</span>
+            </div>
+            <div class="spotlight-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-en="Rent or Purchase" data-es="Alquiler o Compra">Rent or Purchase</span>
+            </div>
+            <div class="spotlight-feature">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-en="Kids to Adults, All Sizes" data-es="Ninos a Adultos, Todas las Tallas">Kids to Adults, All Sizes</span>
+            </div>
+          </div>
+          <button class="spotlight-cta" onclick="showPage('catalog','costumes')">
+            <span data-en="Browse Costumes" data-es="Ver Disfraces">Browse Costumes</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <div class="spotlight-img">
+          <img src="https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Handmade character costumes" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-en="WHY FAMILIES CHOOSE US" data-es="POR QUE NOS ELIGEN LAS FAMILIAS">WHY FAMILIES CHOOSE US</div>
+        <h2 class="section-title" data-en="The Magic Dream Difference" data-es="La Diferencia Magic Dream">The Magic Dream Difference</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h4 data-en="Handmade Costumes" data-es="Disfraces Hechos a Mano">Handmade Costumes</h4>
+          <p data-en="Every costume crafted in-house in LA. Not mass-produced replicas. Real quality you can see and feel." data-es="Cada disfraz creado en nuestra tienda en LA. No son replicas de produccion masiva. Calidad real que puedes ver y sentir.">Every costume crafted in-house in LA. Not mass-produced replicas. Real quality you can see and feel.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h4 data-en="Clean Equipment" data-es="Equipo Limpio">Clean Equipment</h4>
+          <p data-en="The cleanest equipment in town. Every rental is professionally sanitized and inspected before delivery." data-es="El equipo mas limpio de la zona. Cada alquiler es sanitizado e inspeccionado profesionalmente antes de la entrega.">The cleanest equipment in town. Every rental is professionally sanitized and inspected before delivery.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8l5 3-5 3z"/></svg>
+          </div>
+          <h4 data-en="One-Stop Shop" data-es="Todo en Un Solo Lugar">One-Stop Shop</h4>
+          <p data-en="Costumes, jumpers, tables, chairs, tents, concession machines, entertainment. Everything for your party under one roof." data-es="Disfraces, brincolines, mesas, sillas, carpas, maquinas de concesion, entretenimiento. Todo para tu fiesta bajo un solo techo.">Costumes, jumpers, tables, chairs, tents, concession machines, entertainment. Everything for your party under one roof.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4 data-en="Since 1998" data-es="Desde 1998">Since 1998</h4>
+          <p data-en="Family-owned and community-trusted for over 25 years. Owner Oscar and his team know parties inside and out." data-es="De propiedad familiar y con la confianza de la comunidad por mas de 25 anos. El dueno Oscar y su equipo conocen las fiestas a la perfeccion.">Family-owned and community-trusted for over 25 years. Owner Oscar and his team know parties inside and out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" style="background:var(--surface)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-en="HOW IT WORKS" data-es="COMO FUNCIONA">HOW IT WORKS</div>
+        <h2 class="section-title" data-en="Book Your Party in 5 Easy Steps" data-es="Reserva Tu Fiesta en 5 Pasos Faciles">Book Your Party in 5 Easy Steps</h2>
+      </div>
+      <div class="timeline-wrap" id="timelineWrap">
+        <div class="timeline-line"></div>
+        <div class="timeline-progress" id="timelineProgress"></div>
+        <div id="timelineSteps"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-en="REAL REVIEWS" data-es="RESENAS REALES">REAL REVIEWS</div>
+        <h2 class="section-title" data-en="What Our Customers Say" data-es="Lo Que Dicen Nuestros Clientes">What Our Customers Say</h2>
+      </div>
+      <div class="reviews-grid" id="reviewsGrid"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-en="COMMON QUESTIONS" data-es="PREGUNTAS FRECUENTES">COMMON QUESTIONS</div>
+        <h2 class="section-title" data-en="Frequently Asked Questions" data-es="Preguntas Frecuentes">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section class="section" style="background:var(--surface)">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-en="OUR LOCATIONS" data-es="NUESTRAS UBICACIONES">OUR LOCATIONS</div>
+        <h2 class="section-title" data-en="3 Stores Across Los Angeles" data-es="3 Tiendas en Los Angeles">3 Stores Across Los Angeles</h2>
+      </div>
+      <div class="locations-grid">
+        <div class="location-card">
+          <span class="location-badge" data-en="PRIMARY" data-es="PRINCIPAL">PRIMARY</span>
+          <h4 data-en="East LA (Olympic)" data-es="East LA (Olympic)">East LA (Olympic)</h4>
+          <p>4685 E Olympic Blvd<br>Los Angeles, CA 90022</p>
+          <p><a href="tel:+13232638850">(323) 263-8850</a></p>
+          <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 9AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 9AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 9AM-4PM</p>
+        </div>
+        <div class="location-card">
+          <h4 data-en="South Gate" data-es="South Gate">South Gate</h4>
+          <p>4433 Firestone Blvd<br>South Gate, CA 90280</p>
+          <p><a href="tel:+13234849704">(323) 484-9704</a></p>
+          <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 8AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM</p>
+        </div>
+        <div class="location-card">
+          <h4 data-en="Montebello" data-es="Montebello">Montebello</h4>
+          <p>2420 W Whittier Blvd<br>Montebello, CA 90640</p>
+          <p><a href="tel:+13237209104">(323) 720-9104</a></p>
+          <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 8AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <h2 data-en="Ready to Plan Your Dream Party?" data-es="Listo Para Planear Tu Fiesta Sonada?">Ready to Plan Your Dream Party?</h2>
+    <p data-en="Browse our full catalog and reserve your date today. Call or visit any of our 3 locations." data-es="Explora nuestro catalogo completo y reserva tu fecha hoy. Llama o visita cualquiera de nuestras 3 ubicaciones.">Browse our full catalog and reserve your date today. Call or visit any of our 3 locations.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="hero-cta" href="#" onclick="showPage('catalog');event.preventDefault()" style="background:rgba(255,255,255,.12)">
+        <span data-en="Browse All Rentals" data-es="Ver Todos los Alquileres">Browse All Rentals</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a class="hero-cta" href="tel:+13232638850">
+        <span data-en="Call (323) 263-8850" data-es="Llamar (323) 263-8850">Call (323) 263-8850</span>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<!-- ========== CATALOG PAGE ========== -->
+<div class="page" id="page-catalog">
+  <div class="catalog-header">
+    <div class="container">
+      <h1 id="catalogTitle" data-en="All Party Rentals & Costumes" data-es="Todos los Alquileres y Disfraces">All Party Rentals & Costumes</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="filter-bar" id="filterBar"></div>
+    <div class="products-grid" id="catalogGrid"></div>
+  </div>
+  <div style="height:80px"></div>
+</div>
+
+<!-- ========== PRODUCT MODAL ========== -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal">
+    <div class="modal-body">
+      <div class="modal-img" id="modalImg"></div>
+      <div class="modal-info">
+        <button class="modal-close" onclick="closeModal()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <h2 id="modalTitle"></h2>
+        <div class="modal-price" id="modalPrice"></div>
+        <div class="modal-desc" id="modalDesc"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin:8px 0;font-size:.82rem;color:var(--success)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span data-en="Available for rent or purchase" data-es="Disponible para alquiler o compra">Available for rent or purchase</span>
+        </div>
+        <button class="modal-add-btn" onclick="addFromModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span data-en="Add to Quote" data-es="Agregar a Cotizacion">Add to Quote</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+  <span id="toastMsg">Added!</span>
+</div>
+
+<!-- ========== CART DRAWER ========== -->
+<div class="cart-backdrop" id="cartBackdrop" onclick="closeCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-view" id="cartView">
+    <div class="cart-drawer-header">
+      <h3 data-en="Your Quote Cart" data-es="Tu Carrito de Cotizacion">Your Quote Cart</h3>
+      <button onclick="closeCart()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer-body" id="cartBody"></div>
+    <div class="cart-drawer-footer" id="cartFooter" style="display:none">
+      <div class="cart-totals" id="cartTotals"></div>
+      <div class="cart-note" data-en="Prices shown are estimates. Final pricing confirmed at booking." data-es="Los precios mostrados son estimados. El precio final se confirma al reservar.">Prices shown are estimates. Final pricing confirmed at booking.</div>
+      <button class="btn-checkout" onclick="showCheckout()" data-en="Request Quote" data-es="Solicitar Cotizacion">Request Quote</button>
+      <button class="btn-continue" onclick="closeCart()" data-en="Continue Browsing" data-es="Seguir Viendo">Continue Browsing</button>
+    </div>
+  </div>
+  <div class="cart-checkout" id="checkoutView">
+    <div class="checkout-header">
+      <button class="checkout-back" onclick="showCartView()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="15 18 9 12 15 6"/></svg>
+        <span data-en="Back" data-es="Volver">Back</span>
+      </button>
+      <h3 data-en="Event Details" data-es="Datos del Evento">Event Details</h3>
+      <button onclick="closeCart()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="checkout-body">
+      <div class="checkout-summary" id="checkoutSummary"></div>
+      <div class="checkout-field">
+        <label data-en="Event Date" data-es="Fecha del Evento">Event Date <span class="req">*</span></label>
+        <input type="date" id="cDate" required>
+      </div>
+      <div class="checkout-field">
+        <label data-en="Event Type" data-es="Tipo de Evento">Event Type</label>
+        <select id="cEventType">
+          <option value="" data-en="Select..." data-es="Seleccionar...">Select...</option>
+          <option value="birthday" data-en="Birthday Party" data-es="Fiesta de Cumpleanos">Birthday Party</option>
+          <option value="quince" data-en="Quinceañera" data-es="Quinceañera">Quinceañera</option>
+          <option value="wedding" data-en="Wedding / Reception" data-es="Boda / Recepcion">Wedding / Reception</option>
+          <option value="corporate" data-en="Corporate Event" data-es="Evento Corporativo">Corporate Event</option>
+          <option value="school" data-en="School / Church Event" data-es="Evento Escolar / Iglesia">School / Church Event</option>
+          <option value="other" data-en="Other" data-es="Otro">Other</option>
+        </select>
+      </div>
+      <div class="checkout-field">
+        <label data-en="Full Name" data-es="Nombre Completo">Full Name <span class="req">*</span></label>
+        <input type="text" id="cName" required autocomplete="name" maxlength="100">
+      </div>
+      <div class="checkout-field">
+        <label>Email <span class="req">*</span></label>
+        <input type="email" id="cEmail" required autocomplete="email" maxlength="254">
+      </div>
+      <div class="checkout-field">
+        <label data-en="Phone" data-es="Telefono">Phone <span class="req">*</span></label>
+        <input type="tel" id="cPhone" required autocomplete="tel" maxlength="20">
+      </div>
+      <div class="checkout-field">
+        <label data-en="Delivery / Pickup" data-es="Entrega / Recoger">Delivery / Pickup</label>
+        <select id="cDelivery">
+          <option value="pickup" data-en="I'll pick up at store" data-es="Recogere en tienda">I'll pick up at store</option>
+          <option value="delivery" data-en="Deliver to my address" data-es="Entregar a mi direccion">Deliver to my address</option>
+        </select>
+      </div>
+      <div class="checkout-field" id="addressField" style="display:none">
+        <label data-en="Delivery Address" data-es="Direccion de Entrega">Delivery Address</label>
+        <input type="text" id="cAddress" autocomplete="street-address" maxlength="200">
+      </div>
+      <div class="checkout-field">
+        <label data-en="Additional Notes" data-es="Notas Adicionales">Additional Notes</label>
+        <textarea id="cNotes" rows="3" maxlength="500"></textarea>
+      </div>
+      <button class="btn-complete" onclick="completeBooking()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <span data-en="Submit Quote Request" data-es="Enviar Solicitud de Cotizacion">Submit Quote Request</span>
+      </button>
+      <div class="checkout-secure">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span data-en="We'll confirm availability and pricing within 2 hours." data-es="Confirmaremos disponibilidad y precios en menos de 2 horas.">We'll confirm availability and pricing within 2 hours.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Magic Dream Party Rentals" style="height:50px;width:auto;margin-bottom:16px;filter:brightness(1.2)">
+        <p data-en="Family-owned party rental and costume shop serving the greater Los Angeles area since 1998. Se Habla Espanol." data-es="Tienda de alquiler de fiestas y disfraces de propiedad familiar sirviendo el area metropolitana de Los Angeles desde 1998.">Family-owned party rental and costume shop serving the greater Los Angeles area since 1998. Se Habla Espanol.</p>
+        <p style="margin-top:12px">
+          <strong>4685 E Olympic Blvd, Los Angeles, CA 90022</strong><br>
+          <a href="tel:+13232638850">(323) 263-8850</a>
+        </p>
+        <p style="margin-top:8px" data-en="Mon-Fri: 10AM-7PM | Sat-Sun: 9AM-4PM" data-es="Lun-Vie: 10AM-7PM | Sab-Dom: 9AM-4PM">Mon-Fri: 10AM-7PM | Sat-Sun: 9AM-4PM</p>
+      </div>
+      <div>
+        <h4 data-en="Rentals" data-es="Alquileres">Rentals</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('catalog','costumes')" data-en="Character Costumes" data-es="Disfraces de Personajes">Character Costumes</a></li>
+          <li><a href="#" onclick="showPage('catalog','jumpers')" data-en="Bounce Houses" data-es="Brincolines">Bounce Houses</a></li>
+          <li><a href="#" onclick="showPage('catalog','tables')" data-en="Tables & Chairs" data-es="Mesas y Sillas">Tables & Chairs</a></li>
+          <li><a href="#" onclick="showPage('catalog','tents')" data-en="Tents & Canopies" data-es="Carpas">Tents & Canopies</a></li>
+          <li><a href="#" onclick="showPage('catalog','concessions')" data-en="Concession Equipment" data-es="Equipo de Concesion">Concession Equipment</a></li>
+          <li><a href="#" onclick="showPage('catalog','extras')" data-en="Party Extras" data-es="Extras de Fiesta">Party Extras</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Locations" data-es="Ubicaciones">Locations</h4>
+        <ul>
+          <li>East LA (Olympic)</li>
+          <li>South Gate (Firestone)</li>
+          <li>Montebello (Whittier)</li>
+        </ul>
+        <h4 style="margin-top:20px" data-en="Follow Us" data-es="Siguenos">Follow Us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/mgdpartyrentals/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/mgdpartyrental/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Service Areas" data-es="Areas de Servicio">Service Areas</h4>
+        <ul>
+          <li>East Los Angeles</li>
+          <li>Montebello</li>
+          <li>South Gate</li>
+          <li>Downey</li>
+          <li>Whittier</li>
+          <li>Pico Rivera</li>
+          <li>Pasadena</li>
+          <li>Cerritos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Magic Dream Costumes & Party Rentals. All rights reserved. | <a href="#" style="color:rgba(255,255,255,.5)">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-sticky">
+  <a href="tel:+13232638850">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span data-en="Call" data-es="Llamar">Call</span>
+  </a>
+  <a href="https://maps.google.com/?q=4685+E+Olympic+Blvd+Los+Angeles+CA+90022" target="_blank">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    <span data-en="Directions" data-es="Como Llegar">Directions</span>
+  </a>
+</div>
+
+<!-- ═══════ EXIT INTENT POPUP ═══════ -->
+<div class="popup-overlay" id="exitPopup">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup('exitPopup')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="popup-header">
+      <h3 data-en="Planning a Party?" data-es="Planeando una Fiesta?">Planning a Party?</h3>
+      <p data-en="Get a free quote for your event. We'll match any competitor's price on identical equipment." data-es="Obtene una cotizacion gratis para tu evento. Igualamos el precio de cualquier competidor en equipo identico.">Get a free quote for your event. We'll match any competitor's price on identical equipment.</p>
+    </div>
+    <div class="popup-body">
+      <button class="popup-cta" onclick="closePopup('exitPopup');showPage('catalog')" data-en="Browse Rentals" data-es="Ver Alquileres">Browse Rentals</button>
+      <button class="popup-cta" style="margin-top:8px;background:var(--dark)" onclick="closePopup('exitPopup');window.location.href='tel:+13232638850'" data-en="Call (323) 263-8850" data-es="Llamar (323) 263-8850">Call (323) 263-8850</button>
+      <button class="popup-dismiss" onclick="closePopup('exitPopup')" data-en="Just browsing" data-es="Solo viendo">Just browsing</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ REVIEW POPUP ═══════ -->
+<div class="popup-overlay" id="reviewPopup">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup('reviewPopup')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="popup-header" style="background:linear-gradient(135deg,rgba(207,230,122,.15),rgba(70,154,218,.15))">
+      <h3 data-en="Love Your Experience?" data-es="Te Gusto la Experiencia?">Love Your Experience?</h3>
+      <p data-en="Share your photos on Google Reviews and help other families find the perfect party rentals." data-es="Comparte tus fotos en Google Reviews y ayuda a otras familias a encontrar los alquileres perfectos.">Share your photos on Google Reviews and help other families find the perfect party rentals.</p>
+    </div>
+    <div class="popup-body">
+      <button class="popup-cta" onclick="closePopup('reviewPopup');window.open('https://www.google.com/maps/place/Magic+Dream+Costumes+and+Party+Rentals/@34.0186243,-118.1685079','_blank')" data-en="Leave a Google Review" data-es="Dejar una Resena en Google">Leave a Google Review</button>
+      <button class="popup-dismiss" onclick="closePopup('reviewPopup')" data-en="Maybe later" data-es="Quizas despues">Maybe later</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ SCROLL POPUP ═══════ -->
+<div class="popup-overlay" id="scrollPopup">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup('scrollPopup')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="popup-header" style="background:linear-gradient(135deg,rgba(70,154,218,.1),rgba(14,49,100,.1))">
+      <h3 data-en="Need Help Choosing?" data-es="Necesitas Ayuda para Elegir?">Need Help Choosing?</h3>
+      <p data-en="Call us or visit any of our 3 locations. Our team will help you pick the perfect setup for your event." data-es="Llamanos o visita cualquiera de nuestras 3 ubicaciones. Nuestro equipo te ayudara a elegir el montaje perfecto para tu evento.">Call us or visit any of our 3 locations. Our team will help you pick the perfect setup for your event.</p>
+    </div>
+    <div class="popup-body">
+      <button class="popup-cta" onclick="closePopup('scrollPopup');window.location.href='tel:+13232638850'" data-en="Call Now" data-es="Llamar Ahora">Call Now</button>
+      <button class="popup-dismiss" onclick="closePopup('scrollPopup')" data-en="I'm good, thanks" data-es="Estoy bien, gracias">I'm good, thanks</button>
+    </div>
+  </div>
+</div>
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"PartyStore",
+  "name":"Magic Dream Costumes & Party Rentals",
+  "image":"https://le-cdn.hibuwebsites.com/72b2f01ffd464b7cb1d7b6997c62b7de/dms3rep/multi/opt/8242349_389x120-373w.png",
+  "url":"https://www.partyrentalsandcostumes.com/",
+  "telephone":"323-263-8850",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"4685 E Olympic Blvd",
+    "addressLocality":"Los Angeles",
+    "addressRegion":"CA",
+    "postalCode":"90022",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":34.0186243,"longitude":-118.1685079},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"16:00"}
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.3","reviewCount":"34","bestRating":"5"},
+  "sameAs":["https://www.facebook.com/mgdpartyrentals/","https://www.instagram.com/mgdpartyrental/"],
+  "description":"Family-owned costume and party rental shop serving East LA, Montebello, and South Gate since 1998. Over 100 handmade character costumes, bounce houses, tables, chairs, tents, and concession equipment.",
+  "foundingDate":"1998",
+  "areaServed":["East Los Angeles","Montebello","South Gate","Downey","Whittier","Pico Rivera","Pasadena","Cerritos"]
+}
+</script>
+
+<script>
+/* ===== SECURITY ===== */
+function esc(s){if(!s)return '';var d=document.createElement('div');d.appendChild(document.createTextNode(s));return d.innerHTML;}
+
+/* ===== PRODUCT DATA ===== */
+var P=[
+  {id:1,name:"Buzz Lightyear Costume",nameEs:"Disfraz de Buzz Lightyear",price:100,cat:"costumes",img:"https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Full mascot-style Buzz Lightyear costume. Available for rent or purchase.",descEs:"Disfraz estilo mascota de Buzz Lightyear. Disponible para alquiler o compra."},
+  {id:2,name:"Spiderman Costume",nameEs:"Disfraz de Spiderman",price:100,cat:"costumes",img:"https://images.pexels.com/photos/30000892/pexels-photo-30000892.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Mascot-style Spiderman costume. Kids to adults.",descEs:"Disfraz estilo mascota de Spiderman. Ninos a adultos."},
+  {id:3,name:"Sully Costume (Monsters Inc)",nameEs:"Disfraz de Sully (Monsters Inc)",price:110,cat:"costumes",img:"https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Premium handmade Sully mascot costume. Reviewed as 'did not disappoint'.",descEs:"Disfraz de mascota de Sully hecho a mano premium. Resenado como 'no decepciono'."},
+  {id:4,name:"Snow White Kids Costume",nameEs:"Disfraz de Blancanieves (Ninas)",price:75,cat:"costumes",img:"https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Handmade Snow White costume for girls. Made in-store in Los Angeles.",descEs:"Disfraz de Blancanieves hecho a mano para ninas. Hecho en tienda en Los Angeles."},
+  {id:5,name:"Minnie Mouse Kids Costume",nameEs:"Disfraz de Minnie Mouse (Ninas)",price:75,cat:"costumes",img:"https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Adorable Minnie Mouse costume for kids. Handmade with love.",descEs:"Adorable disfraz de Minnie Mouse para ninas. Hecho a mano con amor."},
+  {id:6,name:"Darth Vader Costume",nameEs:"Disfraz de Darth Vader",price:120,cat:"costumes",img:"https://images.pexels.com/photos/30000892/pexels-photo-30000892.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Full mascot-style Darth Vader. Helmet, cape, and suit included.",descEs:"Disfraz completo estilo mascota de Darth Vader. Casco, capa y traje incluidos."},
+  {id:7,name:"Horror Realistic Costume",nameEs:"Disfraz de Horror Realista",price:150,cat:"halloween",img:"https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Handmade with chilling realism. The most terrifying costumes in SoCal.",descEs:"Hecho a mano con realismo escalofriante. Los disfraces mas terrorificos en SoCal."},
+  {id:8,name:"Zombie Full Body Costume",nameEs:"Disfraz de Zombie Cuerpo Completo",price:125,cat:"halloween",img:"https://images.pexels.com/photos/30000892/pexels-photo-30000892.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Realistic zombie costume with prosthetics. Handmade in LA.",descEs:"Disfraz de zombie realista con protesis. Hecho a mano en LA."},
+  {id:9,name:"Inflatable Jumper (Standard)",nameEs:"Brincolin Inflable (Estandar)",price:150,cat:"jumpers",img:"https://images.pexels.com/photos/6379672/pexels-photo-6379672.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Standard size inflatable bounce house. All sizes and types available.",descEs:"Casa de brinco inflable tamano estandar. Todos los tamanos y tipos disponibles."},
+  {id:10,name:"Large Inflatable Jumper",nameEs:"Brincolin Inflable Grande",price:200,cat:"jumpers",img:"https://images.pexels.com/photos/296308/pexels-photo-296308.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Extra-large bounce house for bigger parties. Safe and fun.",descEs:"Casa de brinco extra grande para fiestas mas grandes. Segura y divertida."},
+  {id:11,name:"Folding Chair Rental",nameEs:"Alquiler de Silla Plegable",price:2,cat:"tables",unit:"/each",unitEs:"/c.u.",img:"https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Standard folding chair. Available in bulk quantities.",descEs:"Silla plegable estandar. Disponible en grandes cantidades."},
+  {id:12,name:"Rectangular Table 6ft",nameEs:"Mesa Rectangular 6ft",price:10,cat:"tables",unit:"/each",unitEs:"/c.u.",img:"https://images.pexels.com/photos/30215011/pexels-photo-30215011.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"6-foot rectangular folding table for events.",descEs:"Mesa rectangular plegable de 6 pies para eventos."},
+  {id:13,name:"Table Linens / Cloth",nameEs:"Manteles para Mesa",price:8,cat:"tables",unit:"/each",unitEs:"/c.u.",img:"https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"White table cloths for a clean, professional look.",descEs:"Manteles blancos para un look limpio y profesional."},
+  {id:14,name:"Canopy Tent 10x10",nameEs:"Carpa 10x10",price:100,cat:"tents",img:"https://images.pexels.com/photos/2955714/pexels-photo-2955714.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"10x10 pop-up canopy tent for shade and coverage.",descEs:"Carpa tipo pop-up 10x10 para sombra y cobertura."},
+  {id:15,name:"Canopy Tent 10x20",nameEs:"Carpa 10x20",price:175,cat:"tents",img:"https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Large 10x20 canopy tent. Perfect for medium events.",descEs:"Carpa grande 10x20. Perfecta para eventos medianos."},
+  {id:16,name:"Umbrella Rental",nameEs:"Alquiler de Sombrilla",price:25,cat:"tents",unit:"/each",unitEs:"/c.u.",img:"https://images.pexels.com/photos/2955714/pexels-photo-2955714.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Large patio umbrella for outdoor shade.",descEs:"Sombrilla grande de patio para sombra al aire libre."},
+  {id:17,name:"Popcorn Machine",nameEs:"Maquina de Palomitas",price:85,cat:"concessions",img:"https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Classic popcorn machine rental. Supplies included.",descEs:"Alquiler de maquina de palomitas clasica. Suministros incluidos."},
+  {id:18,name:"Margarita Machine",nameEs:"Maquina de Margaritas",price:125,cat:"concessions",img:"https://images.pexels.com/photos/7603970/pexels-photo-7603970.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Frozen margarita/slushie machine. Perfect for adult parties.",descEs:"Maquina de margaritas/raspados congelados. Perfecta para fiestas de adultos."},
+  {id:19,name:"Cotton Candy Machine",nameEs:"Maquina de Algodon de Azucar",price:85,cat:"concessions",img:"https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Cotton candy machine with supplies. Kids love it.",descEs:"Maquina de algodon de azucar con suministros. A los ninos les encanta."},
+  {id:20,name:"Snow Cone Machine",nameEs:"Maquina de Raspados",price:75,cat:"concessions",img:"https://images.pexels.com/photos/7603970/pexels-photo-7603970.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Snow cone machine rental. Flavors included.",descEs:"Alquiler de maquina de raspados. Sabores incluidos."},
+  {id:21,name:"Hot Dog Machine",nameEs:"Maquina de Hot Dogs",price:75,cat:"concessions",img:"https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=300",desc:"Commercial hot dog roller machine.",descEs:"Maquina de hot dogs rodillo comercial."},
+  {id:22,name:"Chocolate Fountain",nameEs:"Fuente de Chocolate",price:125,cat:"concessions",img:"https://images.pexels.com/photos/7603970/pexels-photo-7603970.jpeg?auto=compress&cs=tinysrgb&w=300",desc:"Flowing chocolate fountain. Dipping items included.",descEs:"Fuente de chocolate fluida. Items para sumergir incluidos."},
+  {id:23,name:"Helium Tank",nameEs:"Tanque de Helio",price:60,cat:"concessions",img:"https://images.pexels.com/photos/18294173/pexels-photo-18294173.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Helium tank for balloons. Fills approx 30-50 balloons.",descEs:"Tanque de helio para globos. Llena aprox 30-50 globos."},
+  {id:24,name:"Clown Entertainment (2hrs)",nameEs:"Payaso Entretenimiento (2hrs)",price:200,cat:"extras",img:"https://images.pexels.com/photos/30218076/pexels-photo-30218076.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Professional clown entertainment for your party. 2 hours.",descEs:"Entretenimiento de payaso profesional para tu fiesta. 2 horas."},
+  {id:25,name:"Pinata",nameEs:"Pinata",price:35,cat:"extras",img:"https://images.pexels.com/photos/8159027/pexels-photo-8159027.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Colorful pinata. Various characters and sizes available.",descEs:"Pinata colorida. Varios personajes y tamanos disponibles."}
+];
+
+var CATS=[
+  {key:"costumes",name:"Character Costumes",nameEs:"Disfraces de Personajes",count:6,img:"https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=600"},
+  {key:"halloween",name:"Halloween Costumes",nameEs:"Disfraces de Halloween",count:2,img:"https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=600"},
+  {key:"jumpers",name:"Bounce Houses",nameEs:"Brincolines",count:2,img:"https://images.pexels.com/photos/6379672/pexels-photo-6379672.jpeg?auto=compress&cs=tinysrgb&w=600"},
+  {key:"tables",name:"Tables & Chairs",nameEs:"Mesas y Sillas",count:3,img:"https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=600"},
+  {key:"tents",name:"Tents & Canopies",nameEs:"Carpas",count:3,img:"https://images.pexels.com/photos/2955714/pexels-photo-2955714.jpeg?auto=compress&cs=tinysrgb&w=600"},
+  {key:"concessions",name:"Concession Equipment",nameEs:"Equipo de Concesion",count:7,img:"https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=600"},
+  {key:"extras",name:"Party Extras",nameEs:"Extras de Fiesta",count:2,img:"https://images.pexels.com/photos/8159027/pexels-photo-8159027.jpeg?auto=compress&cs=tinysrgb&w=600"}
+];
+
+var REVIEWS=[
+  {name:"Robbin T.",text:"A big thank you to Magic Dream party rentals and Oscar, without their help we wouldn't have these amazing memories.",textEs:"Un gran agradecimiento a Magic Dream party rentals y Oscar, sin su ayuda no tendriamos estos increibles recuerdos.",source:"Yelp",stars:5},
+  {name:"Pamela T.",text:"They have clean equipment, authentic characters costumes and high quality kids costumes made here at the store.",textEs:"Tienen equipo limpio, disfraces autenticos de personajes y disfraces de alta calidad para ninos hechos aqui en la tienda.",source:"Yelp",stars:5},
+  {name:"Michael G.",text:"I rented a mascot style Sully costume from Magic Dream party rentals for Halloween this year, and it did not disappoint. The pricing was fair.",textEs:"Alquile un disfraz estilo mascota de Sully de Magic Dream para Halloween este ano, y no decepciono. El precio fue justo.",source:"MapQuest",stars:5},
+  {name:"Verified Customer",text:"Best costume rental place in SoCal! Fast and reliable! Made people laugh and it was very entertaining.",textEs:"El mejor lugar de alquiler de disfraces en SoCal! Rapido y confiable! Hizo reir a la gente y fue muy entretenido.",source:"Yelp",stars:5},
+  {name:"Verified Customer",text:"If you want quality, handmade, unique children's costumes, look no more! I have used their Snow White, Minnie Mouse, Jessie, and Alice in Wonderland costumes.",textEs:"Si quieres disfraces de ninos unicos, hechos a mano y de calidad, no busques mas! He usado sus disfraces de Blancanieves, Minnie Mouse, Jessie y Alicia en el Pais de las Maravillas.",source:"Yelp",stars:5},
+  {name:"Verified Customer",text:"I was able to get chairs, tables, umbrellas, table cloths, helium tank and a jumper for my kids party.",textEs:"Pude conseguir sillas, mesas, sombrillas, manteles, tanque de helio y un brincolin para la fiesta de mis hijos.",source:"Yelp",stars:5}
+];
+
+var STEPS=[
+  {n:1,t:"Browse Our Catalog",tEs:"Explora Nuestro Catalogo",d:"Pick costumes, rentals, and equipment for your event.",dEs:"Elige disfraces, alquileres y equipo para tu evento."},
+  {n:2,t:"Add to Your Quote",tEs:"Agrega a Tu Cotizacion",d:"Select items and fill in your event details.",dEs:"Selecciona articulos y llena los datos de tu evento."},
+  {n:3,t:"We Confirm",tEs:"Confirmamos",d:"Our team confirms availability and pricing within 2 hours.",dEs:"Nuestro equipo confirma disponibilidad y precios en menos de 2 horas."},
+  {n:4,t:"Pick Up or Delivery",tEs:"Recoges o Te Entregamos",d:"Visit any of our 3 stores or schedule delivery.",dEs:"Visita cualquiera de nuestras 3 tiendas o programa entrega."},
+  {n:5,t:"Enjoy the Party!",tEs:"Disfruta la Fiesta!",d:"Make memories. Return equipment when you are done.",dEs:"Crea recuerdos. Devuelve el equipo cuando termines."}
+];
+
+var FAQS=[
+  {q:"How do I rent costumes?",qEs:"Como alquilo disfraces?",a:"Visit any of our 3 locations or browse online and submit a quote request. We'll confirm availability within 2 hours.",aEs:"Visita cualquiera de nuestras 3 ubicaciones o navega en linea y envia una solicitud de cotizacion. Confirmaremos disponibilidad en menos de 2 horas."},
+  {q:"Do you deliver?",qEs:"Hacen entregas?",a:"Yes! We deliver bounce houses, tents, tables, and chairs to the greater Los Angeles area. Delivery fees vary by location.",aEs:"Si! Entregamos brincolines, carpas, mesas y sillas al area metropolitana de Los Angeles. Los costos de entrega varian por ubicacion."},
+  {q:"Can I buy costumes instead of renting?",qEs:"Puedo comprar disfraces en vez de alquilar?",a:"Yes, many of our costumes are available for both rent and purchase. Ask in-store for pricing.",aEs:"Si, muchos de nuestros disfraces estan disponibles para alquiler y compra. Pregunta en tienda por los precios."},
+  {q:"How far in advance should I book?",qEs:"Con cuanta anticipacion debo reservar?",a:"We recommend booking 1-2 weeks in advance, especially for weekends and holidays. Halloween season books up fast.",aEs:"Recomendamos reservar con 1-2 semanas de anticipacion, especialmente para fines de semana y dias festivos. La temporada de Halloween se llena rapido."},
+  {q:"Do you have costumes for adults?",qEs:"Tienen disfraces para adultos?",a:"Yes! We have costumes from kids to adults, small to plus size. Over 100 different characters available.",aEs:"Si! Tenemos disfraces desde ninos hasta adultos, talla chica a talla grande. Mas de 100 personajes diferentes disponibles."}
+];
+
+/* ===== STATE ===== */
+var cart=[];
+var lang='en';
+var currentFilter='all';
+var currentProduct=null;
+var POPULAR_IDS=[1,9,17,24];
+
+/* ===== FORMAT ===== */
+function fmtPrice(p){return '$'+p.toLocaleString('en-US',{minimumFractionDigits:p%1?2:0,maximumFractionDigits:2});}
+
+/* ===== RENDER CATEGORIES ===== */
+function renderCatGrid(){
+  var g=document.getElementById('catGrid');
+  g.innerHTML=CATS.map(function(c){
+    return '<div class="cat-card" onclick="showPage(\'catalog\',\''+c.key+'\')">'
+      +'<img src="'+esc(c.img)+'" alt="'+esc(lang==='es'?c.nameEs:c.name)+'" loading="lazy">'
+      +'<div class="cat-card-overlay"></div>'
+      +'<div class="cat-card-text"><h3>'+(lang==='es'?c.nameEs:c.name)+'</h3><span>'+c.count+' '+(lang==='es'?'productos':'items')+'</span></div>'
+      +'</div>';
+  }).join('');
+}
+
+/* ===== RENDER PRODUCTS ===== */
+function renderProductCard(p){
+  var priceText=fmtPrice(p.price);
+  if(p.unit) priceText+=('<small>'+(lang==='es'?(p.unitEs||p.unit):p.unit)+'</small>');
+  return '<div class="product-card" onclick="openProduct('+p.id+')" style="position:relative">'
+    +'<div class="product-card-img"><img src="'+esc(p.img)+'" alt="'+esc(lang==='es'?p.nameEs:p.name)+'" loading="lazy"></div>'
+    +'<div class="product-card-info"><h4>'+(lang==='es'?p.nameEs:p.name)+'</h4><div class="product-card-price">'+priceText+'</div></div>'
+    +'</div>';
+}
+
+function renderFeatured(){
+  var g=document.getElementById('featuredGrid');
+  var items=P.filter(function(p){return POPULAR_IDS.indexOf(p.id)!==-1;});
+  g.innerHTML=items.map(renderProductCard).join('');
+}
+
+function renderCatalog(filterKey){
+  var g=document.getElementById('catalogGrid');
+  var items=filterKey&&filterKey!=='all'?P.filter(function(p){return p.cat===filterKey;}):P;
+  g.innerHTML=items.map(renderProductCard).join('');
+}
+
+function renderFilterBar(){
+  var fb=document.getElementById('filterBar');
+  var allLabel=lang==='es'?'Todos':'All';
+  var html='<button class="filter-btn'+(currentFilter==='all'?' active':'')+'" onclick="filterCatalog(\'all\')">'+allLabel+'</button>';
+  CATS.forEach(function(c){
+    html+='<button class="filter-btn'+(currentFilter===c.key?' active':'')+'" onclick="filterCatalog(\''+c.key+'\')">'+(lang==='es'?c.nameEs:c.name)+'</button>';
+  });
+  fb.innerHTML=html;
+}
+
+function filterCatalog(key){
+  currentFilter=key;
+  renderFilterBar();
+  renderCatalog(key);
+}
+
+/* ===== RENDER STEPS ===== */
+function renderSteps(){
+  var c=document.getElementById('timelineSteps');
+  c.innerHTML=STEPS.map(function(s){
+    return '<div class="timeline-step"><div class="timeline-dot">'+s.n+'</div>'
+      +'<h4>'+(lang==='es'?s.tEs:s.t)+'</h4>'
+      +'<p>'+(lang==='es'?s.dEs:s.d)+'</p></div>';
+  }).join('');
+}
+
+/* ===== RENDER REVIEWS ===== */
+function renderReviews(){
+  var g=document.getElementById('reviewsGrid');
+  g.innerHTML=REVIEWS.map(function(r){
+    var stars='';for(var i=0;i<(r.stars||5);i++)stars+='★';
+    return '<div class="review-card">'
+      +'<div class="review-stars">'+stars+'</div>'
+      +'<p class="review-text">"'+(lang==='es'?r.textEs:r.text)+'"</p>'
+      +'<div class="review-author">'+esc(r.name)+'</div>'
+      +'<div class="review-source">'+esc(r.source)+'</div>'
+      +'</div>';
+  }).join('');
+}
+
+/* ===== RENDER FAQS ===== */
+function renderFAQs(){
+  var list=document.getElementById('faqList');
+  if(!list) return;
+  list.innerHTML=FAQS.map(function(f){
+    return '<div class="faq-item">'
+      +'<button class="faq-q" onclick="this.parentElement.classList.toggle(\'open\')">'
+      +'<span>'+(lang==='es'?f.qEs:f.q)+'</span>'
+      +'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>'
+      +'</button>'
+      +'<div class="faq-a"><p>'+(lang==='es'?f.aEs:f.a)+'</p></div></div>';
+  }).join('');
+}
+
+/* ===== NAVIGATION ===== */
+function showPage(page,filter){
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
+  document.getElementById('page-'+page).classList.add('active');
+  window.scrollTo(0,0);
+  if(page==='catalog'){
+    currentFilter=filter||'all';
+    renderFilterBar();
+    renderCatalog(currentFilter);
+  }
+}
+
+/* ===== MODAL ===== */
+function openProduct(id){
+  var p=P.find(function(x){return x.id===id;});
+  if(!p) return;
+  currentProduct=p;
+  document.getElementById('modalImg').innerHTML='<img src="'+esc(p.img)+'" alt="'+esc(p.name)+'">';
+  document.getElementById('modalTitle').textContent=lang==='es'?p.nameEs:p.name;
+  var priceText=fmtPrice(p.price);
+  if(p.unit) priceText+=' '+(lang==='es'?(p.unitEs||p.unit):p.unit);
+  document.getElementById('modalPrice').textContent=priceText;
+  document.getElementById('modalDesc').textContent=lang==='es'?(p.descEs||p.desc):p.desc;
+  document.getElementById('productModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function closeModal(){
+  document.getElementById('productModal').classList.remove('open');
+  document.body.style.overflow='';
+  currentProduct=null;
+}
+
+function addFromModal(){
+  if(!currentProduct) return;
+  cart.push({id:currentProduct.id,name:lang==='es'?currentProduct.nameEs:currentProduct.name,price:currentProduct.price,img:currentProduct.img});
+  closeModal();
+  showToast(lang==='es'?'Agregado a la cotizacion':'Added to quote');
+  pulseCartCount();
+  openCart();
+}
+
+/* ===== CART ===== */
+function openCart(){
+  document.getElementById('cartBackdrop').classList.add('open');
+  document.getElementById('cartDrawer').classList.add('open');
+  document.body.style.overflow='hidden';
+  renderCart();
+}
+
+function closeCart(){
+  document.getElementById('cartBackdrop').classList.remove('open');
+  document.getElementById('cartDrawer').classList.remove('open');
+  document.body.style.overflow='';
+  showCartView();
+}
+
+function renderCart(){
+  var body=document.getElementById('cartBody');
+  var footer=document.getElementById('cartFooter');
+  if(!cart.length){
+    body.innerHTML='<div class="cart-empty"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>'
+      +'<p>'+(lang==='es'?'Tu carrito esta vacio':'Your cart is empty')+'</p></div>';
+    footer.style.display='none';
+    return;
+  }
+  body.innerHTML=cart.map(function(item,i){
+    return '<div class="cart-item">'
+      +'<div class="cart-item-img"><img src="'+esc(item.img)+'" alt=""></div>'
+      +'<div class="cart-item-info"><h5>'+esc(item.name)+'</h5><span>'+fmtPrice(item.price)+'</span></div>'
+      +'<button class="cart-item-remove" onclick="removeFromCart('+i+')">'
+      +'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>'
+      +'</button></div>';
+  }).join('');
+  var total=cart.reduce(function(s,i){return s+i.price;},0);
+  document.getElementById('cartTotals').innerHTML='<span>'+(lang==='es'?'Estimado':'Estimated')+'</span><span>'+fmtPrice(total)+'</span>';
+  footer.style.display='block';
+}
+
+function removeFromCart(idx){
+  cart.splice(idx,1);
+  renderCart();
+  pulseCartCount();
+}
+
+function pulseCartCount(){
+  var b=document.getElementById('cartBadge');
+  b.textContent=cart.length||'';
+  b.classList.remove('pulse');
+  void b.offsetWidth;
+  if(cart.length) b.classList.add('pulse');
+}
+
+function showCheckout(){
+  document.getElementById('cartView').classList.add('hidden');
+  document.getElementById('checkoutView').classList.add('active');
+  var summary=document.getElementById('checkoutSummary');
+  var total=cart.reduce(function(s,i){return s+i.price;},0);
+  summary.innerHTML='<h5>'+(lang==='es'?'Resumen de Cotizacion':'Quote Summary')+'</h5>'
+    +cart.map(function(i){return '<div class="checkout-summary-item"><span>'+esc(i.name)+'</span><span>'+fmtPrice(i.price)+'</span></div>';}).join('')
+    +'<div class="checkout-summary-total"><span>'+(lang==='es'?'Total Estimado':'Estimated Total')+'</span><span>'+fmtPrice(total)+'</span></div>';
+}
+
+function showCartView(){
+  document.getElementById('cartView').classList.remove('hidden');
+  document.getElementById('checkoutView').classList.remove('active');
+}
+
+function completeBooking(){
+  var date=document.getElementById('cDate').value;
+  var name=document.getElementById('cName').value.trim();
+  var email=document.getElementById('cEmail').value.trim();
+  var phone=document.getElementById('cPhone').value.trim();
+  if(!date||!name||!email||!phone){
+    alert(lang==='es'?'Por favor completa todos los campos requeridos.':'Please fill in all required fields.');
+    return;
+  }
+  closeCart();
+  cart=[];
+  pulseCartCount();
+  showToast(lang==='es'?'Solicitud enviada. Te contactaremos pronto.':'Quote request submitted. We\'ll contact you soon.');
+}
+
+/* ===== DELIVERY TOGGLE ===== */
+document.getElementById('cDelivery').addEventListener('change',function(){
+  document.getElementById('addressField').style.display=this.value==='delivery'?'block':'none';
+});
+
+/* ===== TOAST ===== */
+function showToast(msg){
+  var t=document.getElementById('toast');
+  document.getElementById('toastMsg').textContent=msg;
+  t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},3000);
+}
+
+/* ===== LANGUAGE TOGGLE ===== */
+function toggleLang(){
+  lang=lang==='en'?'es':'en';
+  document.getElementById('langBtn').textContent=lang==='en'?'ES':'EN';
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){
+      if(el.placeholder) el.placeholder=el.getAttribute('data-'+lang)||el.placeholder;
+    } else {
+      el.innerHTML=el.getAttribute('data-'+lang)||el.textContent;
+    }
+  });
+  renderAll();
+}
+
+/* ===== MOBILE NAV ===== */
+function toggleMobileNav(){
+  document.getElementById('mobileNav').classList.toggle('open');
+  document.body.style.overflow=document.getElementById('mobileNav').classList.contains('open')?'hidden':'';
+}
+
+/* ===== POPUPS ===== */
+var popupShown={exit:false,review:false,scroll:false};
+
+function closePopup(id){
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow='';
+}
+
+function openPopup(id){
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+(function(){
+  setTimeout(function(){
+    if(!popupShown.review&&!sessionStorage.getItem('md_review')){
+      popupShown.review=true;
+      sessionStorage.setItem('md_review','1');
+      openPopup('reviewPopup');
+    }
+  },35000);
+
+  var exitTriggered=false;
+  document.addEventListener('mouseout',function(e){
+    if(exitTriggered||popupShown.exit) return;
+    if(e.clientY<5&&!sessionStorage.getItem('md_exit')){
+      exitTriggered=true;
+      popupShown.exit=true;
+      sessionStorage.setItem('md_exit','1');
+      openPopup('exitPopup');
+    }
+  });
+
+  var scrollCheck=function(){
+    if(popupShown.scroll||sessionStorage.getItem('md_scroll')) return;
+    var scrollPct=window.scrollY/(document.body.scrollHeight-window.innerHeight);
+    if(scrollPct>0.6){
+      popupShown.scroll=true;
+      sessionStorage.setItem('md_scroll','1');
+      openPopup('scrollPopup');
+      window.removeEventListener('scroll',scrollCheck);
+    }
+  };
+  window.addEventListener('scroll',scrollCheck,{passive:true});
+
+  document.querySelectorAll('.popup-overlay').forEach(function(overlay){
+    overlay.addEventListener('click',function(e){
+      if(e.target===overlay) closePopup(overlay.id);
+    });
+  });
+})();
+
+/* ===== NAV SCROLL ===== */
+window.addEventListener('scroll',function(){
+  var nav=document.getElementById('mainNav');
+  if(window.scrollY>100) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+},{passive:true});
+
+/* ===== MODAL/CART CLOSE ON ESCAPE ===== */
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){closeModal();closeCart();}
+});
+
+/* ===== TIMELINE ANIMATION ===== */
+function initTimeline(){
+  var wrap=document.getElementById('timelineWrap');
+  var progress=document.getElementById('timelineProgress');
+  var steps=wrap.querySelectorAll('.timeline-step');
+  if(!steps.length) return;
+
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting) e.target.classList.add('visible');
+    });
+  },{threshold:0.3,rootMargin:'-10% 0px'});
+  steps.forEach(function(s){obs.observe(s);});
+
+  function updateProgress(){
+    var rect=wrap.getBoundingClientRect();
+    var scrolledInto=window.innerHeight-rect.top;
+    var pct=Math.max(0,Math.min(1,scrolledInto/(rect.height+window.innerHeight*0.3)));
+    progress.style.height=(pct*rect.height)+'px';
+  }
+  window.addEventListener('scroll',updateProgress,{passive:true});
+  updateProgress();
+}
+
+/* ===== HERO VIDEO (Canvas Renderer) ===== */
+function initHeroVideo(){
+  var canvas=document.getElementById('heroCanvas');
+  var ctx=canvas.getContext('2d');
+  var video=document.createElement('video');
+  video.muted=true;
+  video.loop=true;
+  video.playsInline=true;
+  video.setAttribute('playsinline','');
+  var src=window.innerWidth<768?'hero-mobile.mp4':'hero.mp4';
+  video.src=src;
+
+  function resize(){
+    canvas.width=canvas.parentElement.offsetWidth;
+    canvas.height=canvas.parentElement.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize',resize);
+
+  function draw(){
+    if(!video.paused&&!video.ended){
+      ctx.drawImage(video,0,0,canvas.width,canvas.height);
+    }
+    requestAnimationFrame(draw);
+  }
+
+  video.addEventListener('canplay',function(){
+    video.play().catch(function(){});
+    draw();
+  });
+  video.load();
+}
+
+/* ===== INIT ===== */
+function renderAll(){
+  renderCatGrid();
+  renderFeatured();
+  renderSteps();
+  renderReviews();
+  renderFAQs();
+}
+renderAll();
+initTimeline();
+initHeroVideo();
+</script>
+</body>
+</html>

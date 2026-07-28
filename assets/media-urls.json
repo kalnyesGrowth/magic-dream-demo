@@ -1,0 +1,89 @@
+{
+  "logo": {
+    "local_path": "assets/logo.png",
+    "source": "https://le-cdn.hibuwebsites.com/72b2f01ffd464b7cb1d7b6997c62b7de/dms3rep/multi/opt/8242349_389x120-373w.png",
+    "transparency": "OK - corners alpha=0, no white background removal needed",
+    "dimensions": "389x120"
+  },
+  "hero_video": {
+    "pexels_id": 35145003,
+    "description": "Festive night scene with yellow balloons and lights - dark background ideal for text overlay",
+    "download_url": "https://www.pexels.com/video/35145003/download/",
+    "alt_id": 6362856,
+    "alt_description": "Colorful fireworks exploding in the dark sky"
+  },
+  "categories": {
+    "character_costumes": {
+      "pexels_id": 9147706,
+      "url": "https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Children dressed in costumes at Halloween party indoors"
+    },
+    "halloween_costumes": {
+      "pexels_id": 9147705,
+      "url": "https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Children in festive Halloween costumes blowing up balloons at a party"
+    },
+    "bounce_houses": {
+      "pexels_id": 6379672,
+      "url": "https://images.pexels.com/photos/6379672/pexels-photo-6379672.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Bright inflatable slide with colorful turrets against a clear blue sky"
+    },
+    "bounce_houses_alt": {
+      "pexels_id": 296308,
+      "url": "https://images.pexels.com/photos/296308/pexels-photo-296308.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Kids enjoying a fun time bouncing in a vibrant inflatable castle outdoors"
+    },
+    "tables_chairs": {
+      "pexels_id": 28976220,
+      "url": "https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Elegant outdoor wedding reception table setup"
+    },
+    "tables_chairs_alt": {
+      "pexels_id": 30215011,
+      "url": "https://images.pexels.com/photos/30215011/pexels-photo-30215011.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Luxurious wedding reception setup featuring floral centerpieces and elegant decor"
+    },
+    "party_tent": {
+      "pexels_id": 2955714,
+      "url": "https://images.pexels.com/photos/2955714/pexels-photo-2955714.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Party event tent setup"
+    },
+    "party_tent_alt": {
+      "pexels_id": 872831,
+      "url": "https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "White canopy tent near coastline"
+    },
+    "concession_popcorn": {
+      "pexels_id": 27698725,
+      "url": "https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Freshly popped popcorn in a vintage machine with a vibrant box"
+    },
+    "concession_popcorn_alt": {
+      "pexels_id": 7603970,
+      "url": "https://images.pexels.com/photos/7603970/pexels-photo-7603970.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "A classic popcorn machine in an empty parking area at night"
+    },
+    "pinata": {
+      "pexels_id": 8159027,
+      "url": "https://images.pexels.com/photos/8159027/pexels-photo-8159027.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Two children play with a colorful piñata in a festive indoor setting"
+    },
+    "clown_entertainment": {
+      "pexels_id": 30218076,
+      "url": "https://images.pexels.com/photos/30218076/pexels-photo-30218076.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "A lively clown performing for a group of children during a sunny outdoor event"
+    },
+    "costume_party": {
+      "pexels_id": 30000892,
+      "url": "https://images.pexels.com/photos/30000892/pexels-photo-30000892.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Three women in costumes enjoy a festive party setting"
+    },
+    "birthday_party": {
+      "pexels_id": 18294173,
+      "url": "https://images.pexels.com/photos/18294173/pexels-photo-18294173.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "description": "Vibrant inflatable clown at an outdoor carnival"
+    }
+  },
+  "sourced_date": "2026-07-27",
+  "notes": "All images from Pexels (CC0 free license). Logo downloaded to assets/logo.png with transparent background confirmed."
+}
