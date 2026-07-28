@@ -61,9 +61,9 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0a1628}
 .hero-video-wrap{position:absolute;inset:0;z-index:0}
 .hero-video-wrap canvas{width:100%;height:100%;object-fit:cover}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,22,40,.65) 0%,rgba(10,22,40,.8) 100%);z-index:1}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,22,40,.45) 0%,rgba(10,22,40,.56) 100%);z-index:1}
 .hero-content{position:relative;z-index:2;text-align:center;color:#fff;padding:20px;max-width:800px}
-.hero-logo{height:80px;width:auto;margin:0 auto 20px;filter:brightness(1.1)}
+.hero-logo{height:100px;width:auto;margin:0 auto 20px;filter:brightness(1.4) drop-shadow(0 2px 12px rgba(0,0,0,.5))}
 .hero-badge{display:inline-block;background:rgba(207,230,122,.15);color:var(--highlight);padding:6px 18px;border-radius:100px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
 .hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;line-height:1.15;margin-bottom:16px;letter-spacing:-.02em}
 .hero-sub{font-size:clamp(.92rem,2vw,1.1rem);color:rgba(255,255,255,.85);max-width:600px;margin:0 auto 28px;line-height:1.6}
@@ -443,7 +443,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
           </button>
         </div>
         <div class="spotlight-img">
-          <img src="https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Handmade character costumes" loading="lazy">
+          <img src="assets/real/costume-extra-2.jpg" alt="Handmade Sully mascot costume by Magic Dream" loading="lazy">
         </div>
       </div>
     </div>
@@ -710,7 +710,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="assets/logo.png" alt="Magic Dream Party Rentals" style="height:50px;width:auto;margin-bottom:16px;filter:brightness(1.2)">
+        <img src="assets/logo.png" alt="Magic Dream Party Rentals" style="height:50px;width:auto;margin-bottom:16px;filter:brightness(1.5)">
         <p data-en="Family-owned party rental and costume shop serving the greater Los Angeles area since 1998. Se Habla Espanol." data-es="Tienda de alquiler de fiestas y disfraces de propiedad familiar sirviendo el area metropolitana de Los Angeles desde 1998.">Family-owned party rental and costume shop serving the greater Los Angeles area since 1998. Se Habla Espanol.</p>
         <p style="margin-top:12px">
           <strong>4685 E Olympic Blvd, Los Angeles, CA 90022</strong><br>
@@ -862,41 +862,41 @@ function esc(s){if(!s)return '';var d=document.createElement('div');d.appendChil
 
 /* ===== PRODUCT DATA ===== */
 var P=[
-  {id:1,name:"Buzz Lightyear Costume",nameEs:"Disfraz de Buzz Lightyear",price:100,cat:"costumes",img:"https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Full mascot-style Buzz Lightyear costume. Available for rent or purchase.",descEs:"Disfraz estilo mascota de Buzz Lightyear. Disponible para alquiler o compra."},
-  {id:2,name:"Spiderman Costume",nameEs:"Disfraz de Spiderman",price:100,cat:"costumes",img:"https://images.pexels.com/photos/30000892/pexels-photo-30000892.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Mascot-style Spiderman costume. Kids to adults.",descEs:"Disfraz estilo mascota de Spiderman. Ninos a adultos."},
-  {id:3,name:"Sully Costume (Monsters Inc)",nameEs:"Disfraz de Sully (Monsters Inc)",price:110,cat:"costumes",img:"https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Premium handmade Sully mascot costume. Reviewed as 'did not disappoint'.",descEs:"Disfraz de mascota de Sully hecho a mano premium. Resenado como 'no decepciono'."},
-  {id:4,name:"Snow White Kids Costume",nameEs:"Disfraz de Blancanieves (Ninas)",price:75,cat:"costumes",img:"https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Handmade Snow White costume for girls. Made in-store in Los Angeles.",descEs:"Disfraz de Blancanieves hecho a mano para ninas. Hecho en tienda en Los Angeles."},
-  {id:5,name:"Minnie Mouse Kids Costume",nameEs:"Disfraz de Minnie Mouse (Ninas)",price:75,cat:"costumes",img:"https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Adorable Minnie Mouse costume for kids. Handmade with love.",descEs:"Adorable disfraz de Minnie Mouse para ninas. Hecho a mano con amor."},
-  {id:6,name:"Darth Vader Costume",nameEs:"Disfraz de Darth Vader",price:120,cat:"costumes",img:"https://images.pexels.com/photos/30000892/pexels-photo-30000892.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Full mascot-style Darth Vader. Helmet, cape, and suit included.",descEs:"Disfraz completo estilo mascota de Darth Vader. Casco, capa y traje incluidos."},
-  {id:7,name:"Horror Realistic Costume",nameEs:"Disfraz de Horror Realista",price:150,cat:"halloween",img:"https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Handmade with chilling realism. The most terrifying costumes in SoCal.",descEs:"Hecho a mano con realismo escalofriante. Los disfraces mas terrorificos en SoCal."},
-  {id:8,name:"Zombie Full Body Costume",nameEs:"Disfraz de Zombie Cuerpo Completo",price:125,cat:"halloween",img:"https://images.pexels.com/photos/30000892/pexels-photo-30000892.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Realistic zombie costume with prosthetics. Handmade in LA.",descEs:"Disfraz de zombie realista con protesis. Hecho a mano en LA."},
-  {id:9,name:"Inflatable Jumper (Standard)",nameEs:"Brincolin Inflable (Estandar)",price:150,cat:"jumpers",img:"https://images.pexels.com/photos/6379672/pexels-photo-6379672.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Standard size inflatable bounce house. All sizes and types available.",descEs:"Casa de brinco inflable tamano estandar. Todos los tamanos y tipos disponibles."},
-  {id:10,name:"Large Inflatable Jumper",nameEs:"Brincolin Inflable Grande",price:200,cat:"jumpers",img:"https://images.pexels.com/photos/296308/pexels-photo-296308.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Extra-large bounce house for bigger parties. Safe and fun.",descEs:"Casa de brinco extra grande para fiestas mas grandes. Segura y divertida."},
-  {id:11,name:"Folding Chair Rental",nameEs:"Alquiler de Silla Plegable",price:2,cat:"tables",unit:"/each",unitEs:"/c.u.",img:"https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Standard folding chair. Available in bulk quantities.",descEs:"Silla plegable estandar. Disponible en grandes cantidades."},
-  {id:12,name:"Rectangular Table 6ft",nameEs:"Mesa Rectangular 6ft",price:10,cat:"tables",unit:"/each",unitEs:"/c.u.",img:"https://images.pexels.com/photos/30215011/pexels-photo-30215011.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"6-foot rectangular folding table for events.",descEs:"Mesa rectangular plegable de 6 pies para eventos."},
-  {id:13,name:"Table Linens / Cloth",nameEs:"Manteles para Mesa",price:8,cat:"tables",unit:"/each",unitEs:"/c.u.",img:"https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"White table cloths for a clean, professional look.",descEs:"Manteles blancos para un look limpio y profesional."},
-  {id:14,name:"Canopy Tent 10x10",nameEs:"Carpa 10x10",price:100,cat:"tents",img:"https://images.pexels.com/photos/2955714/pexels-photo-2955714.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"10x10 pop-up canopy tent for shade and coverage.",descEs:"Carpa tipo pop-up 10x10 para sombra y cobertura."},
-  {id:15,name:"Canopy Tent 10x20",nameEs:"Carpa 10x20",price:175,cat:"tents",img:"https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Large 10x20 canopy tent. Perfect for medium events.",descEs:"Carpa grande 10x20. Perfecta para eventos medianos."},
+  {id:1,name:"Shrek Costume",nameEs:"Disfraz de Shrek",price:100,cat:"costumes",img:"assets/real/costume-shrek.jpg",desc:"Full mascot-style Shrek costume. Handmade in our LA store.",descEs:"Disfraz estilo mascota de Shrek. Hecho a mano en nuestra tienda de LA."},
+  {id:2,name:"Woody Costume (Toy Story)",nameEs:"Disfraz de Woody (Toy Story)",price:100,cat:"costumes",img:"assets/real/costume-variety.jpg",desc:"Mascot-style Woody costume. Kids to adults.",descEs:"Disfraz estilo mascota de Woody. Ninos a adultos."},
+  {id:3,name:"Sully Costume (Monsters Inc)",nameEs:"Disfraz de Sully (Monsters Inc)",price:110,cat:"costumes",img:"assets/real/costume-extra-2.jpg",desc:"Premium handmade Sully mascot costume. Reviewed as 'did not disappoint'.",descEs:"Disfraz de mascota de Sully hecho a mano premium. Resenado como 'no decepciono'."},
+  {id:4,name:"Strawberry Shortcake Costume",nameEs:"Disfraz de Rosita Fresita",price:75,cat:"costumes",img:"assets/real/costume-extra-1.jpg",desc:"Handmade Strawberry Shortcake costume. Made in-store in Los Angeles.",descEs:"Disfraz de Rosita Fresita hecho a mano. Hecho en tienda en Los Angeles."},
+  {id:5,name:"Syndrome Costume (Incredibles)",nameEs:"Disfraz de Sindrome (Increibles)",price:100,cat:"costumes",img:"assets/real/costume-neutron.jpg",desc:"Full mascot-style villain costume. Handmade with detailed features.",descEs:"Disfraz estilo mascota de villano. Hecho a mano con detalles."},
+  {id:6,name:"Dora the Explorer Costume",nameEs:"Disfraz de Dora la Exploradora",price:90,cat:"costumes",img:"assets/real/halloween-dora.jpg",desc:"Adorable Dora mascot costume. Available for rent or purchase.",descEs:"Adorable disfraz de mascota de Dora. Disponible para alquiler o compra."},
+  {id:7,name:"Halloween Horror Costumes",nameEs:"Disfraces de Horror Halloween",price:150,cat:"halloween",img:"assets/real/halloween-lateral.jpg",desc:"Handmade with chilling realism. The most terrifying costumes in SoCal.",descEs:"Hecho a mano con realismo escalofriante. Los disfraces mas terrorificos en SoCal."},
+  {id:8,name:"Halloween Character Collection",nameEs:"Coleccion de Personajes Halloween",price:125,cat:"halloween",img:"assets/real/halloween-banner.png",desc:"Full selection of Halloween costumes. Visit any location to browse our collection.",descEs:"Seleccion completa de disfraces de Halloween. Visita cualquier ubicacion para ver nuestra coleccion."},
+  {id:9,name:"Brave Inflatable Jumper",nameEs:"Brincolin Inflable Brave",price:150,cat:"jumpers",img:"assets/real/jumper-tables-chairs.jpg",desc:"Brave-themed bounce house. All sizes and character themes available.",descEs:"Casa de brinco tema Brave. Todos los tamanos y temas de personajes disponibles."},
+  {id:10,name:"Basketball Double Shot",nameEs:"Doble Tiro de Basketball",price:125,cat:"jumpers",img:"assets/real/jumper-double-shot.jpg",desc:"Arcade-style basketball double-shot game. Great for all ages.",descEs:"Juego de basketball doble tiro estilo arcade. Ideal para todas las edades."},
+  {id:11,name:"Folding Chair Rental",nameEs:"Alquiler de Silla Plegable",price:2,cat:"tables",unit:"/each",unitEs:"/c.u.",img:"assets/real/tables-extra.jpg",desc:"Standard white folding chairs. Available in bulk quantities.",descEs:"Sillas plegables blancas estandar. Disponible en grandes cantidades."},
+  {id:12,name:"Round Table with Covers",nameEs:"Mesa Redonda con Manteles",price:15,cat:"tables",unit:"/each",unitEs:"/c.u.",img:"assets/real/tables-chairs-home.jpg",desc:"Round tables with chair covers for an elegant setup.",descEs:"Mesas redondas con fundas de silla para un montaje elegante."},
+  {id:13,name:"Formal Event Setup",nameEs:"Montaje Formal para Eventos",price:8,cat:"tables",unit:"/chair",unitEs:"/silla",img:"assets/real/tables-chairs-detail.jpg",desc:"Complete formal table and chair setup with linens and decor.",descEs:"Montaje completo formal de mesas y sillas con manteles y decoracion."},
+  {id:14,name:"Party Tent (Large)",nameEs:"Carpa de Fiesta (Grande)",price:175,cat:"tents",img:"assets/real/tents-setup.jpg",desc:"Large white and blue party tent. Perfect for outdoor events.",descEs:"Carpa de fiesta grande blanca y azul. Perfecta para eventos al aire libre."},
+  {id:15,name:"Canopy Tent 10x20",nameEs:"Carpa 10x20",price:150,cat:"tents",img:"https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"10x20 canopy tent. Perfect for medium events.",descEs:"Carpa 10x20. Perfecta para eventos medianos."},
   {id:16,name:"Umbrella Rental",nameEs:"Alquiler de Sombrilla",price:25,cat:"tents",unit:"/each",unitEs:"/c.u.",img:"https://images.pexels.com/photos/2955714/pexels-photo-2955714.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Large patio umbrella for outdoor shade.",descEs:"Sombrilla grande de patio para sombra al aire libre."},
   {id:17,name:"Popcorn Machine",nameEs:"Maquina de Palomitas",price:85,cat:"concessions",img:"https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Classic popcorn machine rental. Supplies included.",descEs:"Alquiler de maquina de palomitas clasica. Suministros incluidos."},
   {id:18,name:"Margarita Machine",nameEs:"Maquina de Margaritas",price:125,cat:"concessions",img:"https://images.pexels.com/photos/7603970/pexels-photo-7603970.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Frozen margarita/slushie machine. Perfect for adult parties.",descEs:"Maquina de margaritas/raspados congelados. Perfecta para fiestas de adultos."},
   {id:19,name:"Cotton Candy Machine",nameEs:"Maquina de Algodon de Azucar",price:85,cat:"concessions",img:"https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Cotton candy machine with supplies. Kids love it.",descEs:"Maquina de algodon de azucar con suministros. A los ninos les encanta."},
   {id:20,name:"Snow Cone Machine",nameEs:"Maquina de Raspados",price:75,cat:"concessions",img:"https://images.pexels.com/photos/7603970/pexels-photo-7603970.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Snow cone machine rental. Flavors included.",descEs:"Alquiler de maquina de raspados. Sabores incluidos."},
   {id:21,name:"Hot Dog Machine",nameEs:"Maquina de Hot Dogs",price:75,cat:"concessions",img:"https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=300",desc:"Commercial hot dog roller machine.",descEs:"Maquina de hot dogs rodillo comercial."},
-  {id:22,name:"Chocolate Fountain",nameEs:"Fuente de Chocolate",price:125,cat:"concessions",img:"https://images.pexels.com/photos/7603970/pexels-photo-7603970.jpeg?auto=compress&cs=tinysrgb&w=300",desc:"Flowing chocolate fountain. Dipping items included.",descEs:"Fuente de chocolate fluida. Items para sumergir incluidos."},
-  {id:23,name:"Helium Tank",nameEs:"Tanque de Helio",price:60,cat:"concessions",img:"https://images.pexels.com/photos/18294173/pexels-photo-18294173.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Helium tank for balloons. Fills approx 30-50 balloons.",descEs:"Tanque de helio para globos. Llena aprox 30-50 globos."},
-  {id:24,name:"Clown Entertainment (2hrs)",nameEs:"Payaso Entretenimiento (2hrs)",price:200,cat:"extras",img:"https://images.pexels.com/photos/30218076/pexels-photo-30218076.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Professional clown entertainment for your party. 2 hours.",descEs:"Entretenimiento de payaso profesional para tu fiesta. 2 horas."},
-  {id:25,name:"Pinata",nameEs:"Pinata",price:35,cat:"extras",img:"https://images.pexels.com/photos/8159027/pexels-photo-8159027.jpeg?auto=compress&cs=tinysrgb&w=600",desc:"Colorful pinata. Various characters and sizes available.",descEs:"Pinata colorida. Varios personajes y tamanos disponibles."}
+  {id:22,name:"Chocolate Fountain",nameEs:"Fuente de Chocolate",price:125,cat:"concessions",img:"assets/real/concessions-equipment.jpg",desc:"Flowing chocolate fountain. Dipping items included.",descEs:"Fuente de chocolate fluida. Items para sumergir incluidos."},
+  {id:23,name:"Helium Tank",nameEs:"Tanque de Helio",price:60,cat:"concessions",img:"assets/real/party-experience.jpg",desc:"Helium tank for balloons. Fills approx 30-50 balloons.",descEs:"Tanque de helio para globos. Llena aprox 30-50 globos."},
+  {id:24,name:"Clown Entertainment (2hrs)",nameEs:"Payaso Entretenimiento (2hrs)",price:200,cat:"extras",img:"assets/real/clowns-costume.jpg",desc:"Professional clown entertainment for your party. 2 hours.",descEs:"Entretenimiento de payaso profesional para tu fiesta. 2 horas."},
+  {id:25,name:"Clown Costume Outfits",nameEs:"Trajes de Payaso",price:75,cat:"extras",img:"assets/real/clowns-mascot.jpg",desc:"Colorful clown outfits available for rent. Multiple styles.",descEs:"Trajes de payaso coloridos disponibles para alquiler. Multiples estilos."}
 ];
 
 var CATS=[
-  {key:"costumes",name:"Character Costumes",nameEs:"Disfraces de Personajes",count:6,img:"https://images.pexels.com/photos/9147706/pexels-photo-9147706.jpeg?auto=compress&cs=tinysrgb&w=600"},
-  {key:"halloween",name:"Halloween Costumes",nameEs:"Disfraces de Halloween",count:2,img:"https://images.pexels.com/photos/9147705/pexels-photo-9147705.jpeg?auto=compress&cs=tinysrgb&w=600"},
-  {key:"jumpers",name:"Bounce Houses",nameEs:"Brincolines",count:2,img:"https://images.pexels.com/photos/6379672/pexels-photo-6379672.jpeg?auto=compress&cs=tinysrgb&w=600"},
-  {key:"tables",name:"Tables & Chairs",nameEs:"Mesas y Sillas",count:3,img:"https://images.pexels.com/photos/28976220/pexels-photo-28976220.jpeg?auto=compress&cs=tinysrgb&w=600"},
-  {key:"tents",name:"Tents & Canopies",nameEs:"Carpas",count:3,img:"https://images.pexels.com/photos/2955714/pexels-photo-2955714.jpeg?auto=compress&cs=tinysrgb&w=600"},
-  {key:"concessions",name:"Concession Equipment",nameEs:"Equipo de Concesion",count:7,img:"https://images.pexels.com/photos/27698725/pexels-photo-27698725.jpeg?auto=compress&cs=tinysrgb&w=600"},
-  {key:"extras",name:"Party Extras",nameEs:"Extras de Fiesta",count:2,img:"https://images.pexels.com/photos/8159027/pexels-photo-8159027.jpeg?auto=compress&cs=tinysrgb&w=600"}
+  {key:"costumes",name:"Character Costumes",nameEs:"Disfraces de Personajes",count:6,img:"assets/real/costume-shrek.jpg"},
+  {key:"halloween",name:"Halloween Costumes",nameEs:"Disfraces de Halloween",count:2,img:"assets/real/halloween-lateral.jpg"},
+  {key:"jumpers",name:"Bounce Houses",nameEs:"Brincolines",count:2,img:"assets/real/jumper-tables-chairs.jpg"},
+  {key:"tables",name:"Tables & Chairs",nameEs:"Mesas y Sillas",count:3,img:"assets/real/tables-chairs-home.jpg"},
+  {key:"tents",name:"Tents & Canopies",nameEs:"Carpas",count:3,img:"assets/real/tents-setup.jpg"},
+  {key:"concessions",name:"Concession Equipment",nameEs:"Equipo de Concesion",count:7,img:"assets/real/concessions-equipment.jpg"},
+  {key:"extras",name:"Party Extras",nameEs:"Extras de Fiesta",count:2,img:"assets/real/clowns-mascot.jpg"}
 ];
 
 var REVIEWS=[
