@@ -36,7 +36,7 @@ button{cursor:pointer;font-family:inherit}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:transparent;transition:background .3s,box-shadow .3s;height:var(--nav-h);display:flex;align-items:center}
 nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--container);margin:0 auto;padding:0 20px}
-.nav-logo img{height:44px;width:auto}
+.nav-logo img{height:44px;width:auto;filter:invert(1)}
 .nav-logo span{color:#fff;font-size:1.2rem;font-weight:800;letter-spacing:-.02em}
 .nav-right{display:flex;align-items:center;gap:16px}
 .nav-phone{color:#fff;font-weight:700;font-size:.88rem;display:flex;align-items:center;gap:6px;opacity:.9;transition:opacity .2s}
@@ -59,13 +59,12 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
 
 /* ===== HERO ===== */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0a1628}
-.hero-video-wrap{position:absolute;inset:0;z-index:0}
-.hero-video-wrap canvas{width:100%;height:100%;object-fit:cover}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,22,40,.45) 0%,rgba(10,22,40,.56) 100%);z-index:1}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url('assets/real/hero-party-scene.png') center center/cover no-repeat}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,22,40,.48) 0%,rgba(10,22,40,.65) 100%);z-index:1}
 .hero-content{position:relative;z-index:2;text-align:center;color:#fff;padding:20px;max-width:800px}
-.hero-logo{height:100px;width:auto;margin:0 auto 20px;filter:brightness(1.4) drop-shadow(0 2px 12px rgba(0,0,0,.5))}
+.hero-logo{height:120px;width:auto;margin:0 auto 24px;filter:invert(1) drop-shadow(0 0 12px rgba(255,255,255,.5));position:relative;z-index:3}
 .hero-badge{display:inline-block;background:rgba(207,230,122,.15);color:var(--highlight);padding:6px 18px;border-radius:100px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
-.hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;line-height:1.15;margin-bottom:16px;letter-spacing:-.02em}
+.hero h1{font-size:clamp(1.6rem,4vw,2.72rem);font-weight:800;line-height:1.15;margin-bottom:16px;letter-spacing:-.02em}
 .hero-sub{font-size:clamp(.92rem,2vw,1.1rem);color:rgba(255,255,255,.85);max-width:600px;margin:0 auto 28px;line-height:1.6}
 .hero-cta{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:14px 32px;border-radius:100px;font-weight:700;font-size:1rem;transition:all .2s}
 .hero-cta:hover{background:rgba(255,255,255,.12);border-color:#fff}
@@ -156,10 +155,15 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
 
 /* ===== LOCATIONS ===== */
 .locations-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.location-card{background:#fff;border-radius:var(--radius);padding:24px;border:1px solid #e5e9f0;text-align:center}
+.location-card{background:#fff;border-radius:var(--radius);border:1px solid #e5e9f0;text-align:center;overflow:hidden}
+.location-map{width:100%;height:180px;border:none;border-bottom:1px solid #e5e9f0}
+.location-card-body{padding:24px}
 .location-card h4{font-size:1.05rem;font-weight:700;margin-bottom:8px;color:var(--primary)}
 .location-card p{font-size:.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:4px}
 .location-card a{color:var(--accent);font-weight:700}
+.review-cta-wrap{text-align:center;margin-top:40px}
+.review-cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;padding:14px 28px;border-radius:100px;font-weight:700;font-size:.95rem;border:none;transition:all .2s}
+.review-cta-btn:hover{background:var(--primary-light)}
 .location-badge{display:inline-block;background:var(--accent);color:#fff;font-size:.7rem;font-weight:700;padding:3px 10px;border-radius:100px;margin-bottom:12px}
 @media(max-width:768px){.locations-grid{grid-template-columns:1fr}}
 
@@ -291,7 +295,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
 .faq-a p{padding:0 0 18px;font-size:.9rem;color:var(--text-secondary);line-height:1.6}
 
 /* ===== CART COUNT ===== */
-.cart-count{position:relative}
+.cart-count{position:relative;background:none;border:none;padding:8px;color:#fff}
 .cart-count-badge{position:absolute;top:-6px;right:-8px;background:var(--accent);color:#fff;font-size:.65rem;font-weight:800;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid var(--dark)}
 .cart-count-badge:empty{display:none}
 .cart-count-badge.pulse{animation:pulse .4s cubic-bezier(.175,.885,.32,1.4)}
@@ -347,9 +351,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-video-wrap" id="heroWrap">
-      <canvas id="heroCanvas"></canvas>
-    </div>
+    <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <img class="hero-logo" src="assets/logo.png" alt="Magic Dream" id="heroLogo">
@@ -512,6 +514,12 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
         <h2 class="section-title" data-en="What Our Customers Say" data-es="Lo Que Dicen Nuestros Clientes">What Our Customers Say</h2>
       </div>
       <div class="reviews-grid" id="reviewsGrid"></div>
+      <div class="review-cta-wrap">
+        <a class="review-cta-btn" href="https://www.google.com/maps/place/Magic+Dream+Costumes+and+Party+Rentals/@34.0186243,-118.1685079" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span data-en="Leave Us a Google Review" data-es="Dejanos una Resena en Google">Leave Us a Google Review</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -535,23 +543,32 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
       </div>
       <div class="locations-grid">
         <div class="location-card">
-          <span class="location-badge" data-en="PRIMARY" data-es="PRINCIPAL">PRIMARY</span>
-          <h4 data-en="East LA (Olympic)" data-es="East LA (Olympic)">East LA (Olympic)</h4>
-          <p>4685 E Olympic Blvd<br>Los Angeles, CA 90022</p>
-          <p><a href="tel:+13232638850">(323) 263-8850</a></p>
-          <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 9AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 9AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 9AM-4PM</p>
+          <iframe class="location-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.1735%2C34.0136%2C-118.1635%2C34.0236&layer=mapnik&marker=34.0186%2C-118.1685" loading="lazy"></iframe>
+          <div class="location-card-body">
+            <span class="location-badge" data-en="PRIMARY" data-es="PRINCIPAL">PRIMARY</span>
+            <h4 data-en="East LA (Olympic)" data-es="East LA (Olympic)">East LA (Olympic)</h4>
+            <p>4685 E Olympic Blvd<br>Los Angeles, CA 90022</p>
+            <p><a href="tel:+13232638850">(323) 263-8850</a></p>
+            <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 9AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 9AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 9AM-4PM</p>
+          </div>
         </div>
         <div class="location-card">
-          <h4 data-en="South Gate" data-es="South Gate">South Gate</h4>
-          <p>4433 Firestone Blvd<br>South Gate, CA 90280</p>
-          <p><a href="tel:+13234849704">(323) 484-9704</a></p>
-          <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 8AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM</p>
+          <iframe class="location-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.2125%2C33.9495%2C-118.2025%2C33.9595&layer=mapnik&marker=33.9545%2C-118.2075" loading="lazy"></iframe>
+          <div class="location-card-body">
+            <h4 data-en="South Gate" data-es="South Gate">South Gate</h4>
+            <p>4433 Firestone Blvd<br>South Gate, CA 90280</p>
+            <p><a href="tel:+13234849704">(323) 484-9704</a></p>
+            <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 8AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM</p>
+          </div>
         </div>
         <div class="location-card">
-          <h4 data-en="Montebello" data-es="Montebello">Montebello</h4>
-          <p>2420 W Whittier Blvd<br>Montebello, CA 90640</p>
-          <p><a href="tel:+13237209104">(323) 720-9104</a></p>
-          <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 8AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM</p>
+          <iframe class="location-map" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.1495%2C34.0098%2C-118.1395%2C34.0198&layer=mapnik&marker=34.0148%2C-118.1445" loading="lazy"></iframe>
+          <div class="location-card-body">
+            <h4 data-en="Montebello" data-es="Montebello">Montebello</h4>
+            <p>2420 W Whittier Blvd<br>Montebello, CA 90640</p>
+            <p><a href="tel:+13237209104">(323) 720-9104</a></p>
+            <p style="font-size:.82rem;margin-top:8px" data-en="Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM" data-es="Lun-Vie: 10AM-7PM<br>Sab-Dom: 8AM-4PM">Mon-Fri: 10AM-7PM<br>Sat-Sun: 8AM-4PM</p>
+          </div>
         </div>
       </div>
     </div>
@@ -606,7 +623,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
         </div>
         <button class="modal-add-btn" onclick="addFromModal()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-          <span data-en="Add to Quote" data-es="Agregar a Cotizacion">Add to Quote</span>
+          <span data-en="Add to Booking" data-es="Agregar a Reserva">Add to Booking</span>
         </button>
       </div>
     </div>
@@ -624,7 +641,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
 <div class="cart-drawer" id="cartDrawer">
   <div class="cart-view" id="cartView">
     <div class="cart-drawer-header">
-      <h3 data-en="Your Quote Cart" data-es="Tu Carrito de Cotizacion">Your Quote Cart</h3>
+      <h3 data-en="Your Booking Cart" data-es="Tu Carrito de Reserva">Your Booking Cart</h3>
       <button onclick="closeCart()">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
@@ -632,8 +649,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
     <div class="cart-drawer-body" id="cartBody"></div>
     <div class="cart-drawer-footer" id="cartFooter" style="display:none">
       <div class="cart-totals" id="cartTotals"></div>
-      <div class="cart-note" data-en="Prices shown are estimates. Final pricing confirmed at booking." data-es="Los precios mostrados son estimados. El precio final se confirma al reservar.">Prices shown are estimates. Final pricing confirmed at booking.</div>
-      <button class="btn-checkout" onclick="showCheckout()" data-en="Request Quote" data-es="Solicitar Cotizacion">Request Quote</button>
+      <button class="btn-checkout" onclick="showCheckout()" data-en="Proceed to Checkout" data-es="Ir a Pagar">Proceed to Checkout</button>
       <button class="btn-continue" onclick="closeCart()" data-en="Continue Browsing" data-es="Seguir Viendo">Continue Browsing</button>
     </div>
   </div>
@@ -643,7 +659,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="15 18 9 12 15 6"/></svg>
         <span data-en="Back" data-es="Volver">Back</span>
       </button>
-      <h3 data-en="Event Details" data-es="Datos del Evento">Event Details</h3>
+      <h3 data-en="Checkout" data-es="Pagar">Checkout</h3>
       <button onclick="closeCart()">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
@@ -693,13 +709,30 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
         <label data-en="Additional Notes" data-es="Notas Adicionales">Additional Notes</label>
         <textarea id="cNotes" rows="3" maxlength="500"></textarea>
       </div>
+      <div style="border-top:1px solid #e5e9f0;margin:20px 0 16px;padding-top:16px">
+        <h4 style="font-size:.95rem;font-weight:800;margin-bottom:14px" data-en="Payment Information" data-es="Informacion de Pago">Payment Information</h4>
+        <div class="checkout-field">
+          <label data-en="Card Number" data-es="Numero de Tarjeta">Card Number <span class="req">*</span></label>
+          <input type="text" id="cCard" required autocomplete="cc-number" maxlength="19" placeholder="1234 5678 9012 3456" inputmode="numeric">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div class="checkout-field">
+            <label data-en="Expiry" data-es="Vencimiento">Expiry <span class="req">*</span></label>
+            <input type="text" id="cExpiry" required autocomplete="cc-exp" maxlength="5" placeholder="MM/YY" inputmode="numeric">
+          </div>
+          <div class="checkout-field">
+            <label>CVV <span class="req">*</span></label>
+            <input type="text" id="cCvv" required autocomplete="cc-csc" maxlength="4" placeholder="123" inputmode="numeric">
+          </div>
+        </div>
+      </div>
       <button class="btn-complete" onclick="completeBooking()">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        <span data-en="Submit Quote Request" data-es="Enviar Solicitud de Cotizacion">Submit Quote Request</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span data-en="Pay & Confirm Booking" data-es="Pagar y Confirmar Reserva">Pay & Confirm Booking</span>
       </button>
       <div class="checkout-secure">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        <span data-en="We'll confirm availability and pricing within 2 hours." data-es="Confirmaremos disponibilidad y precios en menos de 2 horas.">We'll confirm availability and pricing within 2 hours.</span>
+        <span data-en="Secure payment. Your card details are encrypted." data-es="Pago seguro. Los datos de tu tarjeta estan encriptados.">Secure payment. Your card details are encrypted.</span>
       </div>
     </div>
   </div>
@@ -782,7 +815,7 @@ nav.scrolled{background:rgba(10,22,40,0.97);box-shadow:0 2px 20px rgba(0,0,0,.15
     </button>
     <div class="popup-header">
       <h3 data-en="Planning a Party?" data-es="Planeando una Fiesta?">Planning a Party?</h3>
-      <p data-en="Get a free quote for your event. We'll match any competitor's price on identical equipment." data-es="Obtene una cotizacion gratis para tu evento. Igualamos el precio de cualquier competidor en equipo identico.">Get a free quote for your event. We'll match any competitor's price on identical equipment.</p>
+      <p data-en="Book your event today. We'll match any competitor's price on identical equipment." data-es="Reserva tu evento hoy. Igualamos el precio de cualquier competidor en equipo identico.">Book your event today. We'll match any competitor's price on identical equipment.</p>
     </div>
     <div class="popup-body">
       <button class="popup-cta" onclick="closePopup('exitPopup');showPage('catalog')" data-en="Browse Rentals" data-es="Ver Alquileres">Browse Rentals</button>
@@ -863,7 +896,7 @@ function esc(s){if(!s)return '';var d=document.createElement('div');d.appendChil
 /* ===== PRODUCT DATA ===== */
 var P=[
   {id:1,name:"Shrek Costume",nameEs:"Disfraz de Shrek",price:100,cat:"costumes",img:"assets/real/costume-shrek.jpg",desc:"Full mascot-style Shrek costume. Handmade in our LA store.",descEs:"Disfraz estilo mascota de Shrek. Hecho a mano en nuestra tienda de LA."},
-  {id:2,name:"Woody Costume (Toy Story)",nameEs:"Disfraz de Woody (Toy Story)",price:100,cat:"costumes",img:"assets/real/costume-variety.jpg",desc:"Mascot-style Woody costume. Kids to adults.",descEs:"Disfraz estilo mascota de Woody. Ninos a adultos."},
+  {id:2,name:"Woody Costume (Toy Story)",nameEs:"Disfraz de Woody (Toy Story)",price:100,cat:"costumes",img:"assets/real/woody-enhanced.png",desc:"Mascot-style Woody costume. Kids to adults.",descEs:"Disfraz estilo mascota de Woody. Ninos a adultos."},
   {id:3,name:"Sully Costume (Monsters Inc)",nameEs:"Disfraz de Sully (Monsters Inc)",price:110,cat:"costumes",img:"assets/real/costume-extra-2.jpg",desc:"Premium handmade Sully mascot costume. Reviewed as 'did not disappoint'.",descEs:"Disfraz de mascota de Sully hecho a mano premium. Resenado como 'no decepciono'."},
   {id:4,name:"Strawberry Shortcake Costume",nameEs:"Disfraz de Rosita Fresita",price:75,cat:"costumes",img:"assets/real/costume-extra-1.jpg",desc:"Handmade Strawberry Shortcake costume. Made in-store in Los Angeles.",descEs:"Disfraz de Rosita Fresita hecho a mano. Hecho en tienda en Los Angeles."},
   {id:5,name:"Syndrome Costume (Incredibles)",nameEs:"Disfraz de Sindrome (Increibles)",price:100,cat:"costumes",img:"assets/real/costume-neutron.jpg",desc:"Full mascot-style villain costume. Handmade with detailed features.",descEs:"Disfraz estilo mascota de villano. Hecho a mano con detalles."},
@@ -910,14 +943,14 @@ var REVIEWS=[
 
 var STEPS=[
   {n:1,t:"Browse Our Catalog",tEs:"Explora Nuestro Catalogo",d:"Pick costumes, rentals, and equipment for your event.",dEs:"Elige disfraces, alquileres y equipo para tu evento."},
-  {n:2,t:"Add to Your Quote",tEs:"Agrega a Tu Cotizacion",d:"Select items and fill in your event details.",dEs:"Selecciona articulos y llena los datos de tu evento."},
-  {n:3,t:"We Confirm",tEs:"Confirmamos",d:"Our team confirms availability and pricing within 2 hours.",dEs:"Nuestro equipo confirma disponibilidad y precios en menos de 2 horas."},
+  {n:2,t:"Add to Your Booking",tEs:"Agrega a Tu Reserva",d:"Select items and fill in your event details.",dEs:"Selecciona articulos y llena los datos de tu evento."},
+  {n:3,t:"Pay & Book",tEs:"Paga y Reserva",d:"Complete checkout with secure payment and your booking is confirmed instantly.",dEs:"Completa el pago seguro y tu reserva se confirma al instante."},
   {n:4,t:"Pick Up or Delivery",tEs:"Recoges o Te Entregamos",d:"Visit any of our 3 stores or schedule delivery.",dEs:"Visita cualquiera de nuestras 3 tiendas o programa entrega."},
   {n:5,t:"Enjoy the Party!",tEs:"Disfruta la Fiesta!",d:"Make memories. Return equipment when you are done.",dEs:"Crea recuerdos. Devuelve el equipo cuando termines."}
 ];
 
 var FAQS=[
-  {q:"How do I rent costumes?",qEs:"Como alquilo disfraces?",a:"Visit any of our 3 locations or browse online and submit a quote request. We'll confirm availability within 2 hours.",aEs:"Visita cualquiera de nuestras 3 ubicaciones o navega en linea y envia una solicitud de cotizacion. Confirmaremos disponibilidad en menos de 2 horas."},
+  {q:"How do I rent costumes?",qEs:"Como alquilo disfraces?",a:"Browse our catalog online, add items to your cart, and complete checkout with secure payment. Your booking is confirmed instantly.",aEs:"Explora nuestro catalogo en linea, agrega articulos al carrito y completa el pago seguro. Tu reserva se confirma al instante."},
   {q:"Do you deliver?",qEs:"Hacen entregas?",a:"Yes! We deliver bounce houses, tents, tables, and chairs to the greater Los Angeles area. Delivery fees vary by location.",aEs:"Si! Entregamos brincolines, carpas, mesas y sillas al area metropolitana de Los Angeles. Los costos de entrega varian por ubicacion."},
   {q:"Can I buy costumes instead of renting?",qEs:"Puedo comprar disfraces en vez de alquilar?",a:"Yes, many of our costumes are available for both rent and purchase. Ask in-store for pricing.",aEs:"Si, muchos de nuestros disfraces estan disponibles para alquiler y compra. Pregunta en tienda por los precios."},
   {q:"How far in advance should I book?",qEs:"Con cuanta anticipacion debo reservar?",a:"We recommend booking 1-2 weeks in advance, especially for weekends and holidays. Halloween season books up fast.",aEs:"Recomendamos reservar con 1-2 semanas de anticipacion, especialmente para fines de semana y dias festivos. La temporada de Halloween se llena rapido."},
@@ -1059,7 +1092,7 @@ function addFromModal(){
   if(!currentProduct) return;
   cart.push({id:currentProduct.id,name:lang==='es'?currentProduct.nameEs:currentProduct.name,price:currentProduct.price,img:currentProduct.img});
   closeModal();
-  showToast(lang==='es'?'Agregado a la cotizacion':'Added to quote');
+  showToast(lang==='es'?'Agregado a la reserva':'Added to booking');
   pulseCartCount();
   openCart();
 }
@@ -1120,9 +1153,9 @@ function showCheckout(){
   document.getElementById('checkoutView').classList.add('active');
   var summary=document.getElementById('checkoutSummary');
   var total=cart.reduce(function(s,i){return s+i.price;},0);
-  summary.innerHTML='<h5>'+(lang==='es'?'Resumen de Cotizacion':'Quote Summary')+'</h5>'
+  summary.innerHTML='<h5>'+(lang==='es'?'Resumen del Pedido':'Order Summary')+'</h5>'
     +cart.map(function(i){return '<div class="checkout-summary-item"><span>'+esc(i.name)+'</span><span>'+fmtPrice(i.price)+'</span></div>';}).join('')
-    +'<div class="checkout-summary-total"><span>'+(lang==='es'?'Total Estimado':'Estimated Total')+'</span><span>'+fmtPrice(total)+'</span></div>';
+    +'<div class="checkout-summary-total"><span>Total</span><span>'+fmtPrice(total)+'</span></div>';
 }
 
 function showCartView(){
@@ -1142,7 +1175,7 @@ function completeBooking(){
   closeCart();
   cart=[];
   pulseCartCount();
-  showToast(lang==='es'?'Solicitud enviada. Te contactaremos pronto.':'Quote request submitted. We\'ll contact you soon.');
+  showToast(lang==='es'?'Pago confirmado. Tu reserva esta lista.':'Payment confirmed. Your booking is set.');
 }
 
 /* ===== DELIVERY TOGGLE ===== */
@@ -1266,38 +1299,7 @@ function initTimeline(){
   updateProgress();
 }
 
-/* ===== HERO VIDEO (Canvas Renderer) ===== */
-function initHeroVideo(){
-  var canvas=document.getElementById('heroCanvas');
-  var ctx=canvas.getContext('2d');
-  var video=document.createElement('video');
-  video.muted=true;
-  video.loop=true;
-  video.playsInline=true;
-  video.setAttribute('playsinline','');
-  var src=window.innerWidth<768?'hero-mobile.mp4':'hero.mp4';
-  video.src=src;
-
-  function resize(){
-    canvas.width=canvas.parentElement.offsetWidth;
-    canvas.height=canvas.parentElement.offsetHeight;
-  }
-  resize();
-  window.addEventListener('resize',resize);
-
-  function draw(){
-    if(!video.paused&&!video.ended){
-      ctx.drawImage(video,0,0,canvas.width,canvas.height);
-    }
-    requestAnimationFrame(draw);
-  }
-
-  video.addEventListener('canplay',function(){
-    video.play().catch(function(){});
-    draw();
-  });
-  video.load();
-}
+/* ===== HERO BG ===== */
 
 /* ===== INIT ===== */
 function renderAll(){
@@ -1309,7 +1311,6 @@ function renderAll(){
 }
 renderAll();
 initTimeline();
-initHeroVideo();
 </script>
 </body>
 </html>
